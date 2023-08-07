@@ -23,7 +23,6 @@ public class GameManage : MonoBehaviour
     [SerializeField] TMP_Text levelNumber;
     [SerializeField] TMP_Text levelCompletedGems;
     [SerializeField] CanvasGroup levelCompleteCanvasGroup;
-    [SerializeField] AudioClip levelCompletedSFX;
     [SerializeField] float levelCompleteDelay = 3f;
 
     [Header("Level Failed")]
@@ -57,7 +56,9 @@ public class GameManage : MonoBehaviour
         if (levelCleared)
         {
             UnlockNewLevel();
-            Invoke("DisplayLevelComplete", levelCompleteDelay);
+            // Invoke("DisplayLevelComplete", levelCompleteDelay);
+            DisplayLevelComplete();
+            audioSource.Play();
         }
 
         if (player.hitPoints == 0)
@@ -99,8 +100,6 @@ public class GameManage : MonoBehaviour
         {
             levelCompletedPanel.SetActive(true);
             levelCompleteCanvasGroup.alpha += Time.deltaTime;
-            audioSource.PlayOneShot(levelCompletedSFX, 0.5f);
-            // AudioSource.PlayClipAtPoint(levelCompletedSFX, transform.position);
         }
         levelNumber.text = SceneManager.GetActiveScene().name.ToString();
         levelCompletedGems.text = wallet.GetCurrentGems().ToString();
