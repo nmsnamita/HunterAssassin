@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class PlayerActions : MonoBehaviour
 {
     [SerializeField] bool hasAttacked;
 
     [Header("Collectibles")]
-    [SerializeField] GameObject gems;
+    [SerializeField] Transform gems;
+    [SerializeField] float spawnRadius;
     [SerializeField] int minGems;
     [SerializeField] int maxGems;
 
@@ -40,17 +42,13 @@ public class PlayerActions : MonoBehaviour
     IEnumerator SpawnGems(Vector3 spawnLocation)
     {
         yield return null;
-        int noOfGems = Random.Range(minGems, maxGems);
-        for (int i = 0; i < noOfGems; i++)
-        {
-            float xPos = Random.Range(spawnLocation.x - 1, spawnLocation.x + 1);
-            float yPos = 0.1f;
-            float zPos = Random.Range(spawnLocation.z - 1, spawnLocation.z + 1);
 
-            Instantiate(gems,
-                        new Vector3(xPos, yPos, zPos),
-                        Quaternion.identity);
-        }
+        Vector3 randomPosition = Random.insideUnitSphere * spawnRadius;
+        randomPosition.y = 0.1f;
+        Vector3 spawnPosition = spawnLocation + randomPosition;
+
+        Instantiate(gems, spawnPosition, Quaternion.identity);
+
     }
 
     void KnifeStabSound()
@@ -67,12 +65,15 @@ public class PlayerActions : MonoBehaviour
         {
             if (!hasAttacked)
             {
+                int noOfGems = Random.Range(minGems, maxGems);
                 KnifeStabSound();
                 bloodParticles.Play();
                 bloodSplash.transform.localScale = new Vector3(1f, 1f, 1f);
                 Instantiate(bloodSplash, other.gameObject.transform.position, Quaternion.identity);
-                StartCoroutine(SpawnGems(other.gameObject.transform.position));
-
+                for (int i = 0; i < noOfGems; i++)
+                {
+                    StartCoroutine(SpawnGems(other.gameObject.transform.position));
+                }
                 Destroy(other.gameObject);
                 hasAttacked = true;
             }
@@ -81,5 +82,12 @@ public class PlayerActions : MonoBehaviour
                 return;
             }
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.cyan;
+
+        Gizmos.DrawWireSphere(transform.position, spawnRadius);
     }
 }
