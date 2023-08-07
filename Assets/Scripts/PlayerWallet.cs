@@ -19,11 +19,6 @@ public class PlayerWallet : MonoBehaviour
         return gemsAmount;
     }
 
-    // public void ReduceCurrentEnergy(int gemsSpent)
-    // {
-    //     gemsAmount = gemsAmount - gemsSpent;
-    // }
-
     public void IncreaseGems(int gemvalue)
     {
         gemsAmount += gemvalue;
