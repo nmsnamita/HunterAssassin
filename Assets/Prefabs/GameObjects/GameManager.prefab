@@ -51,7 +51,6 @@ MonoBehaviour:
   levelNumber: {fileID: 0}
   levelCompletedGems: {fileID: 0}
   levelCompleteCanvasGroup: {fileID: 0}
-  levelCompletedSFX: {fileID: 8300000, guid: ced952402dcb85247ac7127079c616d2, type: 3}
   levelCompleteDelay: 3
   levelFailedPanel: {fileID: 0}
 --- !u!82 &1017370927
@@ -64,7 +63,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ced952402dcb85247ac7127079c616d2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
