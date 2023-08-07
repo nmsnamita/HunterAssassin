@@ -6197,7 +6197,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasAttacked: 0
-  gems: {fileID: 8727394601536809062, guid: 98f47288d3205b74b866d114454eae53, type: 3}
+  gems: {fileID: 8238842434116858588, guid: 98f47288d3205b74b866d114454eae53, type: 3}
+  spawnRadius: 1
   minGems: 20
   maxGems: 30
   bloodParticles: {fileID: 3668887993876322968}
