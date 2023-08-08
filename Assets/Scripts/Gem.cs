@@ -9,10 +9,15 @@ public class Gem : MonoBehaviour
     [SerializeField] float force;
 
     Rigidbody rb;
+    SphereCollider sphereCollider;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player");
+        sphereCollider = GetComponent<SphereCollider>();
+
+        StartCoroutine(CollectAfterTime());
     }
 
     void Update()
@@ -35,5 +40,12 @@ public class Gem : MonoBehaviour
     void DestoryOverAll()
     {
         Destroy(gameObject, 5f);
+    }
+
+    IEnumerator CollectAfterTime()
+    {
+        sphereCollider.enabled = false;
+        yield return new WaitForSeconds(1f);
+        sphereCollider.enabled = true;
     }
 }
