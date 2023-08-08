@@ -42,12 +42,15 @@ public class PlayerActions : MonoBehaviour
     IEnumerator SpawnGems(Vector3 spawnLocation)
     {
         yield return null;
+        int noOfGems = Random.Range(minGems, maxGems);
+        for (int i = 0; i < noOfGems; i++)
+        {
+            Vector3 randomPosition = Random.insideUnitSphere * spawnRadius;
+            randomPosition.y = 0.1f;
+            Vector3 spawnPosition = spawnLocation + randomPosition;
 
-        Vector3 randomPosition = Random.insideUnitSphere * spawnRadius;
-        randomPosition.y = 0.1f;
-        Vector3 spawnPosition = spawnLocation + randomPosition;
-
-        Instantiate(gems, spawnPosition, Quaternion.identity);
+            Instantiate(gems, spawnPosition, Quaternion.identity);
+        }
 
     }
 
@@ -65,15 +68,11 @@ public class PlayerActions : MonoBehaviour
         {
             if (!hasAttacked)
             {
-                int noOfGems = Random.Range(minGems, maxGems);
                 KnifeStabSound();
                 bloodParticles.Play();
                 bloodSplash.transform.localScale = new Vector3(1f, 1f, 1f);
                 Instantiate(bloodSplash, other.gameObject.transform.position, Quaternion.identity);
-                for (int i = 0; i < noOfGems; i++)
-                {
-                    StartCoroutine(SpawnGems(other.gameObject.transform.position));
-                }
+                StartCoroutine(SpawnGems(other.gameObject.transform.position));
                 Destroy(other.gameObject);
                 hasAttacked = true;
             }
