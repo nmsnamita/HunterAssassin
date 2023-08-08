@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 2809394161976751085}
   - component: {fileID: 7787997752919349009}
   - component: {fileID: 9074159788000188885}
-  - component: {fileID: -671944935938133428}
   - component: {fileID: -6706170777738879525}
+  - component: {fileID: 3362522151543266137}
+  - component: {fileID: 4763170716597627550}
   m_Layer: 8
   m_Name: Log 4
   m_TagString: Untagged
@@ -33,7 +34,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -90}
 --- !u!33 &7787997752919349009
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -41,7 +42,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858906216722870753}
-  m_Mesh: {fileID: -1226817584057097758, guid: 3ca72936692b33f4a8a2d38ec01fd40a, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 89da90f78efb95949adb1ac431f1ec87, type: 2}
 --- !u!23 &9074159788000188885
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -83,20 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &-671944935938133428
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 858906216722870753}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1226817584057097758, guid: 3ca72936692b33f4a8a2d38ec01fd40a, type: 3}
 --- !u!54 &-6706170777738879525
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -113,3 +100,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3362522151543266137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858906216722870753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fff89cdfbbcaa24cbae8518c257b75a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _quality: 0.5
+--- !u!65 &4763170716597627550
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858906216722870753}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.023372268, y: 0.118233934, z: 0.020024985}
+  m_Center: {x: -0.00034249388, y: 0.00000043027103, z: 0.000012488104}

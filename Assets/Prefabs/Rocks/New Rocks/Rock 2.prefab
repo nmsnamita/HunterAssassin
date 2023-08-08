@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7109463607594798854}
   - component: {fileID: 6029110307515986130}
   - component: {fileID: 1093184113238344087}
+  - component: {fileID: 2902225305668660119}
   m_Layer: 8
   m_Name: Rock 2
   m_TagString: Untagged
@@ -41,7 +42,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628537888816678958}
-  m_Mesh: {fileID: 7801639710615276023, guid: 7fe180178f46c144c87bba4659324808, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 619fc6401b13f4940870ae6281849d36, type: 2}
 --- !u!23 &7109463607594798854
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -96,7 +97,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 7801639710615276023, guid: 7fe180178f46c144c87bba4659324808, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 619fc6401b13f4940870ae6281849d36, type: 2}
 --- !u!54 &1093184113238344087
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -113,3 +114,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2902225305668660119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628537888816678958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fff89cdfbbcaa24cbae8518c257b75a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _quality: 0.1
