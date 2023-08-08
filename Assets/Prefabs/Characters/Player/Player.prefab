@@ -6199,8 +6199,8 @@ MonoBehaviour:
   hasAttacked: 0
   gems: {fileID: 8238842434116858588, guid: 98f47288d3205b74b866d114454eae53, type: 3}
   spawnRadius: 1
-  minGems: 20
-  maxGems: 30
+  minGems: 10
+  maxGems: 15
   bloodParticles: {fileID: 3668887993876322968}
   bloodSplash: {fileID: 4451146426906053217, guid: 33852a5686097e041bce58ab1b72b80b, type: 3}
   knifeSFX: {fileID: 8300000, guid: f1286e0f706bb764bbd9c9706c1a70b3, type: 3}
