@@ -6179,6 +6179,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3879365052415955348, guid: 262f4b6eebdcd7340b89436cd04aaf9a, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: d9846cb70d835d64aae27c1997957c48, type: 2}
     - target: {fileID: 5453801386321867587, guid: 262f4b6eebdcd7340b89436cd04aaf9a, type: 3}
       propertyPath: m_Name
       value: Rock 1 (1)
@@ -6914,6 +6918,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3879365052415955348, guid: 262f4b6eebdcd7340b89436cd04aaf9a, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: d9846cb70d835d64aae27c1997957c48, type: 2}
     - target: {fileID: 5453801386321867587, guid: 262f4b6eebdcd7340b89436cd04aaf9a, type: 3}
       propertyPath: m_Name
       value: Rock 1 (2)
