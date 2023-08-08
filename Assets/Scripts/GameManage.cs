@@ -56,9 +56,7 @@ public class GameManage : MonoBehaviour
         if (levelCleared)
         {
             UnlockNewLevel();
-            // Invoke("DisplayLevelComplete", levelCompleteDelay);
-            DisplayLevelComplete();
-            audioSource.Play();
+            Invoke("DisplayLevelComplete", levelCompleteDelay);
         }
 
         if (player.hitPoints == 0)
@@ -96,6 +94,10 @@ public class GameManage : MonoBehaviour
 
     void DisplayLevelComplete()
     {
+        if (levelCompleteCanvasGroup.alpha == 0)
+        {
+            audioSource.Play();
+        }
         if (levelCompleteCanvasGroup.alpha < 1)
         {
             levelCompletedPanel.SetActive(true);
@@ -107,6 +109,7 @@ public class GameManage : MonoBehaviour
 
     void UnlockNewLevel()
     {
+
         if (SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))
         {
             PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
