@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3311450167308601791}
   - component: {fileID: 8263625252686613938}
   - component: {fileID: 3708763940181936349}
-  - component: {fileID: 5595384782445266740}
+  - component: {fileID: 602482585736616691}
   - component: {fileID: 7574072294281600736}
   m_Layer: 6
   m_Name: Emerald
@@ -127,8 +127,8 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0.000000007450581, z: 0}
---- !u!64 &5595384782445266740
-MeshCollider:
+--- !u!65 &602482585736616691
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -137,10 +137,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: -1
-  m_Mesh: {fileID: 2534964839176971238, guid: 58b2bb54e2962a8489d6f98192d0e1d7, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 0.32117027, z: 0.7}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &7574072294281600736
 Rigidbody:
   m_ObjectHideFlags: 0
