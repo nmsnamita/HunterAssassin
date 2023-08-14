@@ -214,9 +214,6 @@ public class EnemyMovement : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, chaseRange);
 
-        Handles.color = Color.blue;
-        Handles.DrawWireArc(transform.position, Vector3.up, Quaternion.Euler(0, -difficultyFOV / 2, 0) * transform.forward, difficultyFOV, difficultyViewDistance);
-
         // Can See Player
         if (canSeePlayer)
         {
