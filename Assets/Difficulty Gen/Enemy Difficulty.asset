@@ -15,81 +15,81 @@ MonoBehaviour:
   myLevels:
   - levelName: Level 1
     enemyDamage: 10
-    enemyViewDistance: 5
-    enemyFOVAngle: 70
+    enemyViewDistance: 3
+    enemyFOVAngle: 50
   - levelName: Level 2
     enemyDamage: 10
-    enemyViewDistance: 5
-    enemyFOVAngle: 70
+    enemyViewDistance: 3
+    enemyFOVAngle: 50
   - levelName: Level 3
     enemyDamage: 10
-    enemyViewDistance: 5
-    enemyFOVAngle: 70
+    enemyViewDistance: 4
+    enemyFOVAngle: 50
   - levelName: Level 4
     enemyDamage: 10
-    enemyViewDistance: 5
-    enemyFOVAngle: 70
+    enemyViewDistance: 4
+    enemyFOVAngle: 50
   - levelName: Level 5
     enemyDamage: 15
-    enemyViewDistance: 5
-    enemyFOVAngle: 70
+    enemyViewDistance: 3
+    enemyFOVAngle: 50
   - levelName: Level 6
     enemyDamage: 15
-    enemyViewDistance: 5
-    enemyFOVAngle: 70
+    enemyViewDistance: 3
+    enemyFOVAngle: 55
   - levelName: Level 7
-    enemyDamage: 15
-    enemyViewDistance: 5
-    enemyFOVAngle: 70
+    enemyDamage: 20
+    enemyViewDistance: 4
+    enemyFOVAngle: 60
   - levelName: Level 8
-    enemyDamage: 10
-    enemyViewDistance: 5
-    enemyFOVAngle: 70
+    enemyDamage: 25
+    enemyViewDistance: 4
+    enemyFOVAngle: 60
   - levelName: Level 9
-    enemyDamage: 10
+    enemyDamage: 30
     enemyViewDistance: 5
-    enemyFOVAngle: 70
+    enemyFOVAngle: 60
   - levelName: Level 10
-    enemyDamage: 10
+    enemyDamage: 35
     enemyViewDistance: 5
     enemyFOVAngle: 70
   - levelName: Level 11
-    enemyDamage: 10
-    enemyViewDistance: 5
-    enemyFOVAngle: 70
-  - levelName: Level 12
-    enemyDamage: 10
-    enemyViewDistance: 5
-    enemyFOVAngle: 70
-  - levelName: Level 13
-    enemyDamage: 20
+    enemyDamage: 15
     enemyViewDistance: 3
-    enemyFOVAngle: 50
-  - levelName: Level 14
-    enemyDamage: 10
+    enemyFOVAngle: 60
+  - levelName: Level 12
+    enemyDamage: 15
+    enemyViewDistance: 3
+    enemyFOVAngle: 60
+  - levelName: Level 13
+    enemyDamage: 15
     enemyViewDistance: 5
-    enemyFOVAngle: 70
+    enemyFOVAngle: 65
+  - levelName: Level 14
+    enemyDamage: 15
+    enemyViewDistance: 5
+    enemyFOVAngle: 65
   - levelName: Level 15
-    enemyDamage: 10
+    enemyDamage: 15
     enemyViewDistance: 5
     enemyFOVAngle: 70
   - levelName: Level 16
-    enemyDamage: 10
-    enemyViewDistance: 5
-    enemyFOVAngle: 70
+    enemyDamage: 20
+    enemyViewDistance: 3
+    enemyFOVAngle: 60
   - levelName: Level 17
-    enemyDamage: 10
-    enemyViewDistance: 5
-    enemyFOVAngle: 70
+    enemyDamage: 25
+    enemyViewDistance: 4
+    enemyFOVAngle: 60
   - levelName: Level 18
-    enemyDamage: 10
-    enemyViewDistance: 5
-    enemyFOVAngle: 70
+    enemyDamage: 30
+    enemyViewDistance: 4
+    enemyFOVAngle: 60
   - levelName: Level 19
-    enemyDamage: 10
-    enemyViewDistance: 5
-    enemyFOVAngle: 70
+    enemyDamage: 35
+    enemyViewDistance: 4
+    enemyFOVAngle: 60
   - levelName: Level 20
-    enemyDamage: 10
+    enemyDamage: 40
     enemyViewDistance: 5
     enemyFOVAngle: 70
