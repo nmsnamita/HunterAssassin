@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class VisionCone : MonoBehaviour
 {
     public Material VisionConeMaterial;
-    public float VisionRange;
     public LayerMask VisionObstructingLayer;
     public int VisionConeResolution = 120;
     [SerializeField] DifficultyGenerator difficultyGenerator;
@@ -17,6 +16,7 @@ public class VisionCone : MonoBehaviour
     string currentSceneName;
     string difficultyLevel;
     float difficultyFOV;
+    float difficultyViewDistance;
 
     void Start()
     {
@@ -31,6 +31,7 @@ public class VisionCone : MonoBehaviour
             {
                 difficultyLevel = levels.levelName;
                 difficultyFOV = levels.enemyFOVAngle;
+                difficultyViewDistance = levels.enemyViewDistance;
             }
         }
         difficultyFOV *= Mathf.Deg2Rad;
@@ -61,13 +62,13 @@ public class VisionCone : MonoBehaviour
             Cosine = Mathf.Cos(Currentangle);
             Vector3 RaycastDirection = (transform.forward * Cosine) + (transform.right * Sine);
             Vector3 VertForward = (Vector3.forward * Cosine) + (Vector3.right * Sine);
-            if (Physics.Raycast(transform.position, RaycastDirection, out RaycastHit hit, VisionRange, VisionObstructingLayer))
+            if (Physics.Raycast(transform.position, RaycastDirection, out RaycastHit hit, difficultyViewDistance, VisionObstructingLayer))
             {
                 Vertices[i + 1] = VertForward * hit.distance;
             }
             else
             {
-                Vertices[i + 1] = VertForward * VisionRange;
+                Vertices[i + 1] = VertForward * difficultyViewDistance;
             }
 
 

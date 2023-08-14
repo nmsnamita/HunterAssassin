@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Animations;
@@ -13,7 +14,6 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] public Transform player;
 
     [Header("Distances")]
-    [SerializeField] float maxViewDistance = 5;
     [SerializeField] float chaseRange = 8;
     [SerializeField] float randomPointRadius = 20;
 
@@ -43,6 +43,7 @@ public class EnemyMovement : MonoBehaviour
     string currentSceneName;
     string difficultyLevel;
     float difficultyFOV;
+    float difficultyViewDistance;
 
     void Start()
     {
@@ -60,6 +61,7 @@ public class EnemyMovement : MonoBehaviour
             {
                 difficultyLevel = levels.levelName;
                 difficultyFOV = levels.enemyFOVAngle;
+                difficultyViewDistance = levels.enemyViewDistance;
             }
         }
     }
@@ -170,7 +172,7 @@ public class EnemyMovement : MonoBehaviour
     }
     private void CreateFOV()
     {
-        Collider[] rangeCheck = Physics.OverlapSphere(transform.position, maxViewDistance, targetMask);
+        Collider[] rangeCheck = Physics.OverlapSphere(transform.position, difficultyViewDistance, targetMask);
 
         if (rangeCheck.Length != 0)
         {
@@ -203,16 +205,19 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
+        // Max View Distance
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, maxViewDistance);
+        Gizmos.DrawWireSphere(transform.position, difficultyViewDistance);
         Gizmos.DrawLine(transform.position, newPos);
 
+        // Max Chase Distance
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, chaseRange);
-    }
 
-    private void OnDrawGizmos()
-    {
+        Handles.color = Color.blue;
+        Handles.DrawWireArc(transform.position, Vector3.up, Quaternion.Euler(0, -difficultyFOV / 2, 0) * transform.forward, difficultyFOV, difficultyViewDistance);
+
+        // Can See Player
         if (canSeePlayer)
         {
             Gizmos.color = Color.yellow;
