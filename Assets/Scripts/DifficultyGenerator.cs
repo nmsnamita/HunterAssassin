@@ -15,6 +15,7 @@ public class DifficultyGenerator : ScriptableObject
 
         [Header("Enemy Settings")]
         public int enemyDamage;
+        public float enemyViewDistance;
         public float enemyFOVAngle;
 
     }
