@@ -145,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   landmineModel: {fileID: 390185576685239581}
   explosionParticles: {fileID: 6203106520850174751}
-  explosionDamage: 100
+  explosionDamage: 50
   damageRadius: 3
 --- !u!95 &2832800937020747999
 Animator:
