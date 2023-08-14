@@ -2328,7 +2328,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VisionConeMaterial: {fileID: 2100000, guid: ba229965ae380324f9ab1ab862a7d6bd, type: 2}
-  VisionRange: 5
   VisionObstructingLayer:
     serializedVersion: 2
     m_Bits: 448
@@ -2571,7 +2570,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  maxViewDistance: 5
   chaseRange: 8
   randomPointRadius: 20
   engageSpeed: 3
@@ -2602,7 +2600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootingParticles: {fileID: 4315287990612016737}
   gunShotSFX: {fileID: 8300000, guid: acdebaea3ce61104585e2ecbcd710886, type: 3}
-  difficultyGenerator: {fileID: 11400000, guid: a66223edae1d0244780392422ee9e068, type: 2}
+  difficultyGenerator: {fileID: 11400000, guid: 2f74444dc0bc17e44a7bed7f785142fc, type: 2}
 --- !u!82 &8317710268749417223
 AudioSource:
   m_ObjectHideFlags: 0
