@@ -54,7 +54,6 @@ public class DoorController : MonoBehaviour
         {
             isOpening = true;
             startTime = Time.time;
-            // navmeshagent.enabled = false;
             FindObjectOfType<PlayerMovement>().StopMoving();
         }
     }
