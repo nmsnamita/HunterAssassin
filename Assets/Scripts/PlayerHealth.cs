@@ -26,7 +26,6 @@ public class PlayerHealth : MonoBehaviour
             player.hasDied = true;
             Instantiate(deathParticles, transform.position, Quaternion.identity);
 
-            // enemy.animator.SetBool("Attack", false);
         }
     }
 }
