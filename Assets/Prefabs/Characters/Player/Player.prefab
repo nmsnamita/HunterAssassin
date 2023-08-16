@@ -6079,6 +6079,7 @@ GameObject:
   - component: {fileID: 5273374718054713763}
   - component: {fileID: 5273374718054713762}
   - component: {fileID: 5273374718054713765}
+  - component: {fileID: 8202553764222110183}
   - component: {fileID: 5273374718054713764}
   - component: {fileID: 5273374718054713767}
   - component: {fileID: 5273374718054713766}
@@ -6218,6 +6219,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gemsAmount: 0
   gemSound: {fileID: 8300000, guid: d8b6a3d4da5bae940968892930ed17a9, type: 3}
+--- !u!114 &8202553764222110183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5273374718054713768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e514b9583bef3849922250ecf0a5ee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyCount: 0
 --- !u!120 &5273374718054713764
 LineRenderer:
   m_ObjectHideFlags: 0
