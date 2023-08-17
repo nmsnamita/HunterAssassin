@@ -578,12 +578,13 @@ GameObject:
   - component: {fileID: 4442267582915349382}
   - component: {fileID: 3958042264379806010}
   - component: {fileID: 3958042264379806011}
+  - component: {fileID: 434321104}
   m_Layer: 0
   m_Name: Wooden_door
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4442267582915349382
 Transform:
@@ -592,7 +593,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3958042264379806012}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.930939, y: 0.85, z: 6.702774}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
@@ -612,7 +613,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.125, y: 0.17, z: 0.1}
+  m_Size: {x: 0.125, y: 0.17, z: 0.25}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3958042264379806011
 MonoBehaviour:
@@ -630,7 +631,25 @@ MonoBehaviour:
   openAngle: 90
   openTime: 0.5
   closeTime: 0.5
-  navmeshagent: {fileID: 0}
+  keysRequired: 2
+  navMeshAgent: {fileID: 0}
+  navMeshObstacle: {fileID: 434321104}
+--- !u!208 &434321104
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3958042264379806012}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.07, y: 0.085, z: 0.015}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &4191905303126461095
 GameObject:
   m_ObjectHideFlags: 0
