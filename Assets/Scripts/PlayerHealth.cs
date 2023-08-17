@@ -28,4 +28,9 @@ public class PlayerHealth : MonoBehaviour
 
         }
     }
+
+    public int GetCurrentHealth()
+    {
+        return (int)hitPoints;
+    }
 }
