@@ -2310,9 +2310,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  maxViewDistance: 5
   chaseRange: 8
-  randomPointRadius: 20
+  randomPointRadius: 5
   engageSpeed: 3
   randomSpeed: 1
   canSeePlayer: 0
@@ -2918,7 +2917,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VisionConeMaterial: {fileID: 2100000, guid: ba229965ae380324f9ab1ab862a7d6bd, type: 2}
-  VisionRange: 5
   VisionObstructingLayer:
     serializedVersion: 2
     m_Bits: 448

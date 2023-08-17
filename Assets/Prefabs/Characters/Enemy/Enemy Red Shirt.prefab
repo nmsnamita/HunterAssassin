@@ -2571,7 +2571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   chaseRange: 8
-  randomPointRadius: 20
+  randomPointRadius: 5
   engageSpeed: 3
   randomSpeed: 1
   canSeePlayer: 0
