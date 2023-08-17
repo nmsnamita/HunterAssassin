@@ -9,18 +9,25 @@ public class DoorController : MonoBehaviour
     [SerializeField] float openAngle = 90f;
     [SerializeField] float openTime;
     [SerializeField] float closeTime;
-    [SerializeField] NavMeshAgent navmeshagent;
+    [SerializeField] int keysRequired;
+    [SerializeField] NavMeshAgent navMeshAgent;
+    [SerializeField] NavMeshObstacle navMeshObstacle;
 
     private Quaternion initialRotation;
     private Quaternion targetRotation;
     private bool isOpening;
     private bool isClosing;
+    private bool hasOpened;
     private float startTime;
+
+    Key key;
 
     void Start()
     {
         initialRotation = doorTransform.rotation;
         targetRotation = initialRotation * Quaternion.Euler(0f, openAngle, 0f);
+
+        key = FindObjectOfType<Key>();
     }
 
     void Update()
@@ -33,7 +40,7 @@ public class DoorController : MonoBehaviour
             if (t >= 1f)
             {
                 isOpening = false;
-                navmeshagent.enabled = true;
+                navMeshAgent.enabled = true;
             }
         }
         else if (isClosing)
@@ -55,15 +62,19 @@ public class DoorController : MonoBehaviour
             isOpening = true;
             startTime = Time.time;
             FindObjectOfType<PlayerMovement>().StopMoving();
+            hasOpened = true;
+            navMeshObstacle.enabled = false;
         }
     }
 
     public void CloseDoor()
     {
-        if (!isClosing && !isOpening)
+        if (!isClosing && !isOpening && hasOpened)
         {
             isClosing = true;
             startTime = Time.time;
+            hasOpened = false;
+            navMeshObstacle.enabled = true;
         }
     }
 
@@ -71,7 +82,14 @@ public class DoorController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Enemy"))
         {
-            OpenDoor();
+            if (key.keyCount >= keysRequired)
+            {
+                OpenDoor();
+            }
+            else
+            {
+                FindObjectOfType<PlayerMovement>().StopMoving();
+            }
         }
     }
 
