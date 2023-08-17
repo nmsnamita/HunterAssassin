@@ -20,16 +20,19 @@ public class Laser : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        StartCoroutine(OnAndOff());
-    }
+    // private void Start()
+    // {
+    //     StartCoroutine(OnAndOff());
+    // }
 
-    IEnumerator OnAndOff()
-    {
-        laserBeam.SetActive(true);
-        yield return new WaitForSeconds(laserTimer);
-        laserBeam.SetActive(false);
-        yield return new WaitForSeconds(laserTimer);
-    }
+    // IEnumerator OnAndOff()
+    // {
+    //     while (true)
+    //     {
+    //         laserBeam.SetActive(true);
+    //         yield return new WaitForSeconds(laserTimer);
+    //         laserBeam.SetActive(false);
+    //         yield return new WaitForSeconds(laserTimer);
+    //     }
+    // }
 }

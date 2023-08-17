@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 571672078948072423}
   - component: {fileID: 3038548663558360188}
   - component: {fileID: 7843415049275268177}
+  - component: {fileID: 8607486142241118624}
   m_Layer: 0
   m_Name: LaserBeam
   m_TagString: Untagged
@@ -27,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505974267526955762}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -3.571, y: 0, z: -0}
-  m_LocalScale: {x: 0.1, y: 2.9601815, z: 0.1}
+  m_LocalPosition: {x: -3.526, y: 0, z: -0}
+  m_LocalScale: {x: 0.1, y: 2.9152977, z: 0.1}
   m_Children: []
   m_Father: {fileID: 3993919990512627599}
   m_RootOrder: 3
@@ -96,6 +97,21 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &8607486142241118624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505974267526955762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 540b7463ca5c4694693a2dd036a64d2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 50
+  laserBeam: {fileID: 1505974267526955762}
+  laserTimer: 0
 --- !u!1 &2821977369012837773
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,7 +407,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3993919990512627599}
-  - component: {fileID: 269311874}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -417,18 +432,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &269311874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7789465489362888362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 540b7463ca5c4694693a2dd036a64d2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageAmount: 10
-  laserBeam: {fileID: 1505974267526955762}
-  laserTimer: 1
