@@ -36,7 +36,6 @@ public class PlayerActions : MonoBehaviour
             animator.SetBool("Attack", false);
             hasAttacked = false;
         }
-
     }
 
     IEnumerator SpawnGems(Vector3 spawnLocation)
