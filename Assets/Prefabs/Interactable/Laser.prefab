@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540b7463ca5c4694693a2dd036a64d2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 50
+  damageAmount: 20
   laserBeam: {fileID: 1505974267526955762}
   laserTimer: 0
 --- !u!1 &1563843774631224808
