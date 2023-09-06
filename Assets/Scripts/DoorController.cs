@@ -11,7 +11,6 @@ public class DoorController : MonoBehaviour
     [SerializeField] float closeTime;
     [SerializeField] int keysRequired;
     [SerializeField] NavMeshAgent navMeshAgent;
-    [SerializeField] NavMeshObstacle navMeshObstacle;
 
     private Quaternion initialRotation;
     private Quaternion targetRotation;
@@ -63,7 +62,6 @@ public class DoorController : MonoBehaviour
             startTime = Time.time;
             FindObjectOfType<PlayerMovement>().StopMoving();
             hasOpened = true;
-            navMeshObstacle.enabled = false;
         }
     }
 
@@ -74,22 +72,27 @@ public class DoorController : MonoBehaviour
             isClosing = true;
             startTime = Time.time;
             hasOpened = false;
-            navMeshObstacle.enabled = true;
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Player"))
         {
             if (key.keyCount >= keysRequired)
             {
                 OpenDoor();
+                key.ReduceCurrentKey(keysRequired);
             }
             else
             {
                 FindObjectOfType<PlayerMovement>().StopMoving();
             }
+        }
+
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            OpenDoor();
         }
     }
 
