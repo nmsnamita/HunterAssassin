@@ -508,6 +508,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1841517055}
+    - target: {fileID: 282167022734454516, guid: bcdb095775743764ea0498529d1f3896, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 282167022734454516, guid: bcdb095775743764ea0498529d1f3896, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1573907094}
+    - target: {fileID: 282167022734454516, guid: bcdb095775743764ea0498529d1f3896, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseSettings
+      objectReference: {fileID: 0}
+    - target: {fileID: 282167022734454516, guid: bcdb095775743764ea0498529d1f3896, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ShowSettings, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 282167024402027091, guid: bcdb095775743764ea0498529d1f3896, type: 3}
       propertyPath: m_Name
       value: InGame Setting
@@ -3885,7 +3901,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 3.7805004, y: 18.521664, z: 4.298088}
+  m_LocalPosition: {x: 3.776042, y: 18.521664, z: 4.298088}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8652,7 +8668,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759221239}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 3.7805004, y: 20.632353, z: 0.58974314}
+  m_LocalPosition: {x: 3.776042, y: 20.632353, z: 0.58974314}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1621653575}

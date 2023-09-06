@@ -2989,7 +2989,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759221239}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -5.3034997, y: 20.632353, z: 0.12574302}
+  m_LocalPosition: {x: -5.307958, y: 20.632353, z: 0.12574302}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1621653575}
@@ -4110,12 +4110,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 503911080}
     - target: {fileID: 282167022734454516, guid: bcdb095775743764ea0498529d1f3896, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 282167022734454516, guid: bcdb095775743764ea0498529d1f3896, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 9093284810111910611}
+      objectReference: {fileID: 191836357}
     - target: {fileID: 282167022734454516, guid: bcdb095775743764ea0498529d1f3896, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
+      value: CloseSettings
+      objectReference: {fileID: 0}
+    - target: {fileID: 282167022734454516, guid: bcdb095775743764ea0498529d1f3896, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ShowSettings, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 282167024402027091, guid: bcdb095775743764ea0498529d1f3896, type: 3}
       propertyPath: m_Name
