@@ -8,6 +8,13 @@ public class Laser : MonoBehaviour
     [SerializeField] GameObject laserBeam;
     [SerializeField] float laserTimer;
 
+    AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -16,6 +23,7 @@ public class Laser : MonoBehaviour
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(damageAmount);
+                audioSource.Play();
             }
         }
     }
