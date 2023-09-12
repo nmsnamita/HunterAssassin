@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !hasDied && !gameManage.levelCleared)
+        if (Input.GetMouseButton(0) && !hasDied && !gameManage.levelCleared)
         {
             ClickToMove();
         }
