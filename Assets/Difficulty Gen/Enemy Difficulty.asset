@@ -93,3 +93,11 @@ MonoBehaviour:
     enemyDamage: 40
     enemyViewDistance: 5
     enemyFOVAngle: 70
+  - levelName: Level 21
+    enemyDamage: 30
+    enemyViewDistance: 5
+    enemyFOVAngle: 70
+  - levelName: Level 22
+    enemyDamage: 35
+    enemyViewDistance: 5
+    enemyFOVAngle: 75
