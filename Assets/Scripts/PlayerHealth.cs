@@ -29,6 +29,16 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void IncreaseHealth(float healthPointsIncrease)
+    {
+        hitPoints += healthPointsIncrease;
+
+        if (hitPoints > 100f)
+        {
+            hitPoints = 100f;
+        }
+    }
+
     public int GetCurrentHealth()
     {
         return (int)hitPoints;
