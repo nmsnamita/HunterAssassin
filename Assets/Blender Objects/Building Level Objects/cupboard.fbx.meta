@@ -5,6 +5,21 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cupboard
+    second: {fileID: 2100000, guid: fb2a4049c9afab046bb89b52efa8ca07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handle
+    second: {fileID: 2100000, guid: 2e1b41d88e3f3f149a13cdb21638fcd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 75074024880ea7940888e3a6bd901dd6, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: plywood_diff_4k

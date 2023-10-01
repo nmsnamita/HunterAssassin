@@ -3,7 +3,27 @@ guid: 7e8d0adfb0e28a44d8434dfc4d6f3d45
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Screen
+    second: {fileID: 2100000, guid: e52360fd08b6f874e9a9dbd817759567, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stand
+    second: {fileID: 2100000, guid: f766c5450867dcf418f9419df609b881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stand Reflection
+    second: {fileID: 2100000, guid: 3d2ee594660d220468406da304cb1e31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TV
+    second: {fileID: 2100000, guid: af61bb4a3548e9e4992310be5f27237a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
