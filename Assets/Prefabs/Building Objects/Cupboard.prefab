@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -7098565394360792512, guid: 0d49c1d735c8c1e46bcf9e3f7bc455f3, type: 3}
+  - {fileID: 2100000, guid: 2e1b41d88e3f3f149a13cdb21638fcd9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -140,8 +140,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3964009645117545614, guid: 0d49c1d735c8c1e46bcf9e3f7bc455f3, type: 3}
-  - {fileID: -6478536213147159724, guid: 0d49c1d735c8c1e46bcf9e3f7bc455f3, type: 3}
+  - {fileID: 2100000, guid: fb2a4049c9afab046bb89b52efa8ca07, type: 2}
+  - {fileID: 2100000, guid: 75074024880ea7940888e3a6bd901dd6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -222,7 +222,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -7098565394360792512, guid: 0d49c1d735c8c1e46bcf9e3f7bc455f3, type: 3}
+  - {fileID: 2100000, guid: 2e1b41d88e3f3f149a13cdb21638fcd9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -303,7 +303,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -7098565394360792512, guid: 0d49c1d735c8c1e46bcf9e3f7bc455f3, type: 3}
+  - {fileID: 2100000, guid: 2e1b41d88e3f3f149a13cdb21638fcd9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -384,7 +384,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -7098565394360792512, guid: 0d49c1d735c8c1e46bcf9e3f7bc455f3, type: 3}
+  - {fileID: 2100000, guid: 2e1b41d88e3f3f149a13cdb21638fcd9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -532,7 +532,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -7098565394360792512, guid: 0d49c1d735c8c1e46bcf9e3f7bc455f3, type: 3}
+  - {fileID: 2100000, guid: 2e1b41d88e3f3f149a13cdb21638fcd9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
