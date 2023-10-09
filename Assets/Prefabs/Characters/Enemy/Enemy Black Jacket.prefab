@@ -2312,8 +2312,8 @@ MonoBehaviour:
   player: {fileID: 0}
   chaseRange: 8
   randomPointRadius: 15
-  engageSpeed: 3
-  randomSpeed: 1
+  engageSpeed: 4
+  randomSpeed: 2
   canSeePlayer: 0
   hasSeen: 0
   hasDied: 0
@@ -3040,11 +3040,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6985913720055356266, guid: 47b5ddde1433ef44487e5cbbb39174b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.29919103
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6985913720055356266, guid: 47b5ddde1433ef44487e5cbbb39174b6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.000000035666346
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 6985913720055356266, guid: 47b5ddde1433ef44487e5cbbb39174b6, type: 3}
       propertyPath: m_LocalRotation.w
