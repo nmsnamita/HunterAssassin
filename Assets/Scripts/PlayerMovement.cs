@@ -33,8 +33,7 @@ public class PlayerMovement : MonoBehaviour
         navMeshAgent.speed = playerMoveSpeed;
 
         lineRenderer = GetComponent<LineRenderer>();
-        lineRenderer.startWidth = .25f;
-        lineRenderer.endWidth = 0.25f;
+
         lineRenderer.positionCount = 0;
 
         animator = GetComponent<Animator>();
