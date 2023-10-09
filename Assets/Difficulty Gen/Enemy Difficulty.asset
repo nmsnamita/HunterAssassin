@@ -78,58 +78,338 @@ MonoBehaviour:
     enemyViewDistance: 3
     enemyFOVAngle: 60
   - levelName: Level 17
-    enemyDamage: 25
+    enemyDamage: 20
     enemyViewDistance: 4
     enemyFOVAngle: 60
   - levelName: Level 18
-    enemyDamage: 30
+    enemyDamage: 20
     enemyViewDistance: 4
     enemyFOVAngle: 60
   - levelName: Level 19
-    enemyDamage: 35
+    enemyDamage: 20
     enemyViewDistance: 4
     enemyFOVAngle: 60
   - levelName: Level 20
-    enemyDamage: 40
+    enemyDamage: 25
     enemyViewDistance: 5
     enemyFOVAngle: 70
   - levelName: Level 21
-    enemyDamage: 30
+    enemyDamage: 18
     enemyViewDistance: 5
     enemyFOVAngle: 70
   - levelName: Level 22
-    enemyDamage: 35
+    enemyDamage: 18
     enemyViewDistance: 5
     enemyFOVAngle: 75
   - levelName: Level 23
-    enemyDamage: 35
+    enemyDamage: 18
     enemyViewDistance: 5
     enemyFOVAngle: 75
   - levelName: Level 24
-    enemyDamage: 35
+    enemyDamage: 20
     enemyViewDistance: 5
     enemyFOVAngle: 75
   - levelName: Level 25
-    enemyDamage: 35
+    enemyDamage: 20
     enemyViewDistance: 5
     enemyFOVAngle: 75
   - levelName: Level 26
-    enemyDamage: 35
+    enemyDamage: 25
     enemyViewDistance: 5
     enemyFOVAngle: 75
   - levelName: Level 27
-    enemyDamage: 35
+    enemyDamage: 25
     enemyViewDistance: 5
     enemyFOVAngle: 75
   - levelName: Level 28
-    enemyDamage: 35
-    enemyViewDistance: 5
-    enemyFOVAngle: 75
-  - levelName: Level 29
-    enemyDamage: 35
+    enemyDamage: 25
     enemyViewDistance: 5
     enemyFOVAngle: 75
   - levelName: Level 29
     enemyDamage: 30
     enemyViewDistance: 5
     enemyFOVAngle: 75
+  - levelName: Level 30
+    enemyDamage: 30
+    enemyViewDistance: 5
+    enemyFOVAngle: 75
+  - levelName: Level 31
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 32
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 33
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 34
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 35
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 36
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 37
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 38
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 39
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 40
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 41
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 42
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 43
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 44
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 45
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 46
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 47
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 48
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 49
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 50
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 51
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 52
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 53
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 54
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 55
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 56
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 57
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 58
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 59
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 60
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 61
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 62
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 63
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 64
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 65
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 66
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 67
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 68
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 69
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 70
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 71
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 72
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 73
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 74
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 75
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 76
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 77
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 78
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 79
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 80
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 81
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 82
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 83
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 84
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 85
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 86
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 87
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 88
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 89
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 90
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 91
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 92
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 93
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 94
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 95
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 96
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 97
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 98
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 99
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
+  - levelName: Level 100
+    enemyDamage: 20
+    enemyViewDistance: 5
+    enemyFOVAngle: 50
