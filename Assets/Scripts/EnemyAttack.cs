@@ -47,7 +47,7 @@ public class EnemyAttack : MonoBehaviour
         if (currentSceneName == difficultyLevel)
         {
             target.TakeDamage(difficultyDamage);
-            // shootingParticles.Play();
+            shootingParticles.Play();
             PlayGunShotEffect();
         }
 
