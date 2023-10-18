@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 5368502924834640183}
   - component: {fileID: 8130678611134785227}
   - component: {fileID: 1424776534933408339}
+  - component: {fileID: 1680061134194117235}
+  - component: {fileID: 3048831951879868619}
   m_Layer: 5
   m_Name: Key Image
   m_TagString: Untagged
@@ -91,6 +93,37 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 0, y: -15}
   m_UseGraphicAlpha: 1
+--- !u!95 &1680061134194117235
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725654501608049162}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b3172584b5ebccb4eb35b12cf2c60ad1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3048831951879868619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725654501608049162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0bc38ad9001931498b10b7533d3c55e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &817583603821549258
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,6 +284,8 @@ GameObject:
   - component: {fileID: 2698116706365934893}
   - component: {fileID: 2989250582300781306}
   - component: {fileID: 3919790410368320280}
+  - component: {fileID: 6482900393065933356}
+  - component: {fileID: 650868305541956463}
   m_Layer: 5
   m_Name: Health Image
   m_TagString: Untagged
@@ -330,6 +365,37 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 0, y: -15}
   m_UseGraphicAlpha: 1
+--- !u!95 &6482900393065933356
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109643219954372541}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8a0392f2800c3c94db74f419c1b0e727, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &650868305541956463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109643219954372541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0bc38ad9001931498b10b7533d3c55e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3494907812735961906
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,6 +677,8 @@ GameObject:
   - component: {fileID: 3494907813539871451}
   - component: {fileID: 3494907813539871450}
   - component: {fileID: 3494907813539871448}
+  - component: {fileID: 9092352417049026011}
+  - component: {fileID: 663179460845366981}
   m_Layer: 5
   m_Name: Gem Image
   m_TagString: Untagged
@@ -690,6 +758,37 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 0, y: -15}
   m_UseGraphicAlpha: 1
+--- !u!95 &9092352417049026011
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3494907813539871268}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ade14a7d5f646a743b4f0c88243a0f31, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &663179460845366981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3494907813539871268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0bc38ad9001931498b10b7533d3c55e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3494907814268143272
 GameObject:
   m_ObjectHideFlags: 0
