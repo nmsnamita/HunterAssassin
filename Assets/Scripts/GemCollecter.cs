@@ -16,6 +16,7 @@ public class GemCollecter : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             FindObjectOfType<PlayerWallet>().IncreaseGems(gemValue);
+            FindObjectOfType<UIAnim>().hasInteracted = true;
             Destroy(gameObject);
         }
     }
