@@ -14,35 +14,38 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dialogue.unity
     guid: 20bee884f8b94764097352faff49562b
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Level 1.unity
+    guid: 87b42d07d65e35244b73a4b109cbca0c
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: bb40ddb1f30ca4c45b4a2ae8d9de5ec6
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: 324268848a2a2a94d98696e143f0b4e3
+  - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: 2c7d45a1b5d8734458735cf6a4e301d4
+  - enabled: 1
+    path: Assets/Scenes/Level 5.unity
+    guid: 1b71052842b966b46a39dcb0ab7e4521
+  - enabled: 1
+    path: Assets/Scenes/Level 6.unity
+    guid: 95d470845c4b2c748864d578c0915ac4
+  - enabled: 1
+    path: Assets/Scenes/Level 7.unity
+    guid: c37c91ddbfb377b4ebcc0f9cc30d41cb
+  - enabled: 1
+    path: Assets/Scenes/Level 8.unity
+    guid: 97139508174d7934c9b99fdf8df0b7d6
+  - enabled: 1
+    path: Assets/Scenes/Level 9.unity
+    guid: e0c369172e415854e9951adb04d17fc9
+  - enabled: 1
+    path: Assets/Scenes/Level 10.unity
+    guid: a32b2168c6b8c2e4a9774de4d2d73767
+  - enabled: 1
+    path: Assets/Scenes/Level 11.unity
+    guid: 476e0e8323f12fe4a85494efbaac734a
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 3f9475d2bb72416409ad94b01b3f294c, type: 2}
