@@ -6,6 +6,8 @@ public class ShowSettings : MonoBehaviour
 {
     [SerializeField] GameObject settingsPanel;
 
+    public bool isPaused;
+
     private void Start()
     {
         settingsPanel.SetActive(false);
@@ -19,23 +21,19 @@ public class ShowSettings : MonoBehaviour
 
     public void CloseSettings()
     {
-        StartCoroutine(UnPauseGame());
-    }
-
-    IEnumerator UnPauseGame()
-    {
         ResumeGame();
-        yield return new WaitForSeconds(.1f);
         settingsPanel.SetActive(false);
     }
 
     void PauseGame()
     {
+        isPaused = true;
         Time.timeScale = 0f;
     }
 
     void ResumeGame()
     {
+        isPaused = false;
         Time.timeScale = 1f;
     }
 }
