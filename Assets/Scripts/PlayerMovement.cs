@@ -20,27 +20,25 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     GameManage gameManage;
     AudioSource audioSource;
+    ShowSettings showSettings;
 
     string groundTag = "Ground";
     string collectibleTag = "Collectible";
     string enemyTag = "Enemy";
-    string UITag = "UI";
     bool walking;
 
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
-        navMeshAgent.speed = playerMoveSpeed;
-
         lineRenderer = GetComponent<LineRenderer>();
-
-        lineRenderer.positionCount = 0;
-
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
 
         gameManage = FindObjectOfType<GameManage>();
+        showSettings = FindObjectOfType<ShowSettings>();
 
-        audioSource = GetComponent<AudioSource>();
+        lineRenderer.positionCount = 0;
+        navMeshAgent.speed = playerMoveSpeed;
 
     }
     void Update()
@@ -80,22 +78,25 @@ public class PlayerMovement : MonoBehaviour
     {
         Ray ray = cinemachineCamera.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+        if (!showSettings.isPaused)
         {
-            if (hit.collider.CompareTag(groundTag) || hit.collider.CompareTag(collectibleTag) && !hit.collider.CompareTag(UITag))
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
-                animator.SetBool("Run", true);
-                ActivateClickMarker();
-                clickmarkerPrefab.transform.position = hit.point;
-                navMeshAgent.SetDestination(hit.point);
-                if (walking)
+                if (hit.collider.CompareTag(groundTag) || hit.collider.CompareTag(collectibleTag))
                 {
-                    PlayFootstepSound();
+                    animator.SetBool("Run", true);
+                    ActivateClickMarker();
+                    clickmarkerPrefab.transform.position = hit.point;
+                    navMeshAgent.SetDestination(hit.point);
+                    if (walking)
+                    {
+                        PlayFootstepSound();
+                    }
                 }
-            }
-            if (hit.collider.CompareTag(enemyTag))
-            {
-                targetEnemy = hit.collider.transform;
+                if (hit.collider.CompareTag(enemyTag))
+                {
+                    targetEnemy = hit.collider.transform;
+                }
             }
         }
     }
