@@ -12,6 +12,7 @@ public class PlayerWallet : MonoBehaviour
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        LoadGemCount();
     }
 
     public int GetCurrentGems()
@@ -23,7 +24,17 @@ public class PlayerWallet : MonoBehaviour
     {
         gemsAmount += gemvalue;
         audioSource.PlayOneShot(gemSound);
+
+        SaveGemCount();
     }
 
+    private void SaveGemCount()
+    {
+        PlayerDataManager.SaveGemCount(gemsAmount);
+    }
 
+    private void LoadGemCount()
+    {
+        gemsAmount = PlayerDataManager.LoadGemCount();
+    }
 }
