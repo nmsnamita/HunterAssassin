@@ -23,11 +23,6 @@ public class LevelMenu : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        gameObject.SetActive(false);
-    }
-
     public void OpenLevel(int levelId)
     {
         string levelName = "Level " + levelId;

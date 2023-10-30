@@ -6,7 +6,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float playerMoveSpeed = 5f;
+    [SerializeField] public float playerMoveSpeed = 5f;
     [SerializeField] RaycastHit hit;
     [SerializeField] Camera cinemachineCamera;
     [SerializeField] private GameObject clickmarkerPrefab;
