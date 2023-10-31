@@ -53,5 +53,6 @@
         "temp/":true,
         "Temp/":true
     },
-    "dotnet.defaultSolution": "HunterAssassin.sln"
+    "dotnet.defaultSolution": "HunterAssassin.sln",
+    "dotnet.preferCSharpExtension": true
 }
