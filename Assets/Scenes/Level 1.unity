@@ -765,6 +765,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1478647588606495080, guid: c9545204874841845ba73badd08cddad, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4784259802876154642, guid: c9545204874841845ba73badd08cddad, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -809,10 +813,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5273374718054713760, guid: c9545204874841845ba73badd08cddad, type: 3}
-      propertyPath: footStepAS
-      value: 
-      objectReference: {fileID: 1721606694}
     - target: {fileID: 5273374718054713760, guid: c9545204874841845ba73badd08cddad, type: 3}
       propertyPath: visualObjects
       value: 
@@ -1387,11 +1387,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!82 &1721606694 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5930085474787920931, guid: c9545204874841845ba73badd08cddad, type: 3}
-  m_PrefabInstance: {fileID: 1212083769}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1788522757
 GameObject:
   m_ObjectHideFlags: 0
