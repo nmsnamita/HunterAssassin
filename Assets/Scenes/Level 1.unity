@@ -741,6 +741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Complete Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 576346606963193900, guid: eacd6ca1b5042e54d8435c025b62f4e6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eacd6ca1b5042e54d8435c025b62f4e6, type: 3}
 --- !u!224 &993393500 stripped
@@ -1033,6 +1037,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Failed Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 1624197252194877957, guid: 90a0a040471cc1f4ea787672946b371a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1624197252194877958, guid: 90a0a040471cc1f4ea787672946b371a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1285,6 +1293,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InGame Overlay
       objectReference: {fileID: 0}
+    - target: {fileID: 3494907812735961906, guid: f9a0164ba97e44249bcff6748b2359f3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3494907812735961907, guid: f9a0164ba97e44249bcff6748b2359f3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1299,27 +1311,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3494907812735961907, guid: f9a0164ba97e44249bcff6748b2359f3, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3494907812735961907, guid: f9a0164ba97e44249bcff6748b2359f3, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3494907812735961907, guid: f9a0164ba97e44249bcff6748b2359f3, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3494907812735961907, guid: f9a0164ba97e44249bcff6748b2359f3, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3494907812735961907, guid: f9a0164ba97e44249bcff6748b2359f3, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3494907812735961907, guid: f9a0164ba97e44249bcff6748b2359f3, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3494907812735961907, guid: f9a0164ba97e44249bcff6748b2359f3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2833,6 +2845,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1258883874}
     m_Modifications:
+    - target: {fileID: 282167022664801246, guid: bcdb095775743764ea0498529d1f3896, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -43.43994
+      objectReference: {fileID: 0}
     - target: {fileID: 282167022690872009, guid: bcdb095775743764ea0498529d1f3896, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2848,6 +2864,10 @@ PrefabInstance:
     - target: {fileID: 282167024402027091, guid: bcdb095775743764ea0498529d1f3896, type: 3}
       propertyPath: m_Name
       value: InGame Setting
+      objectReference: {fileID: 0}
+    - target: {fileID: 282167024402027091, guid: bcdb095775743764ea0498529d1f3896, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 282167024402027102, guid: bcdb095775743764ea0498529d1f3896, type: 3}
       propertyPath: m_Pivot.x
