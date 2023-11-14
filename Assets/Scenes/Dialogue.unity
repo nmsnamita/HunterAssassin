@@ -2252,9 +2252,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 396139447}
     m_Modifications:
+    - target: {fileID: 4884608307310109985, guid: 8e18f5f81463d0543aef55f33953923a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4884608307590502640, guid: 8e18f5f81463d0543aef55f33953923a, type: 3}
       propertyPath: m_Name
       value: LoadingScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 4884608307590502640, guid: 8e18f5f81463d0543aef55f33953923a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4884608307590502643, guid: 8e18f5f81463d0543aef55f33953923a, type: 3}
       propertyPath: m_Pivot.x
