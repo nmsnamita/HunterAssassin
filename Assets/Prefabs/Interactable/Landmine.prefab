@@ -111,7 +111,7 @@ Transform:
   m_GameObject: {fileID: 4380413160559368539}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1018349091437782951}
   - {fileID: 6203106520849747775}
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   landmineModel: {fileID: 390185576685239581}
   explosionParticles: {fileID: 6203106520850174751}
-  explosionDamage: 50
+  explosionDamage: 20
   damageRadius: 3
 --- !u!95 &2832800937020747999
 Animator:
@@ -269,9 +269,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5589839065958732900}
     m_Modifications:
+    - target: {fileID: 100000, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
       propertyPath: m_Name
       value: ExplosionMobile
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
       propertyPath: m_RootOrder
@@ -317,6 +337,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1710831305947526077, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3149299372361974860, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
       propertyPath: ShapeModule.radius.value
       value: 2
@@ -336,6 +360,18 @@ PrefabInstance:
     - target: {fileID: 3149299372361974860, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key0.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873340130345220317, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927898592588167727, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7472239089816649762, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 10800000, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
