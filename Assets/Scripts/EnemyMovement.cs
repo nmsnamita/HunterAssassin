@@ -16,6 +16,7 @@ public class EnemyMovement : MonoBehaviour
     [Header("Distances")]
     [SerializeField] float chaseRange = 8;
     [SerializeField] float randomPointRadius = 20;
+    [SerializeField] float notificationRange = 12f;
 
     [Header("Speeds")]
     [SerializeField] float engageSpeed = 5;
@@ -45,6 +46,9 @@ public class EnemyMovement : MonoBehaviour
     float difficultyFOV;
     float difficultyViewDistance;
 
+    static List<EnemyMovement> allEnemies = new List<EnemyMovement>();
+    bool notifiedNearbyEnemies = false;
+
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -64,6 +68,8 @@ public class EnemyMovement : MonoBehaviour
                 difficultyViewDistance = levels.enemyViewDistance;
             }
         }
+
+        allEnemies.Add(this);
     }
 
     void Update()
@@ -74,7 +80,21 @@ public class EnemyMovement : MonoBehaviour
 
         if (distanceToTarget > chaseRange) { hasSeen = false; }
 
-        if (hasSeen) { EngageOnPlayer(); }
+        if (hasSeen)
+        {
+            EngageOnPlayer();
+
+            if (!notifiedNearbyEnemies && distanceToTarget <= navMeshAgent.stoppingDistance)
+            {
+                NotifyNearbyEnemies();
+                notifiedNearbyEnemies = true;
+            }
+        }
+        else
+        {
+            // Reset notification flag when player is not seen
+            notifiedNearbyEnemies = false;
+        }
 
         if (!hasSeen)
         {
@@ -97,6 +117,32 @@ public class EnemyMovement : MonoBehaviour
     private void FixedUpdate()
     {
         CreateFOV();
+    }
+
+    void NotifyNearbyEnemies()
+    {
+        List<EnemyMovement> enemiesToNotify = new List<EnemyMovement>(allEnemies);
+
+        // Find nearby enemies to notify
+        foreach (EnemyMovement enemy in enemiesToNotify)
+        {
+            if (enemy == null || enemy == this || enemy.notifiedNearbyEnemies)
+                continue;
+
+            float distanceToOtherEnemy = Vector3.Distance(transform.position, enemy.transform.position);
+            if (distanceToOtherEnemy <= chaseRange)
+            {
+                enemy.StartChasing();
+            }
+        }
+
+        // Mark this enemy as notified
+        notifiedNearbyEnemies = true;
+    }
+
+    void StartChasing()
+    {
+        hasSeen = true;
     }
 
     private void StayIdle()
@@ -130,7 +176,7 @@ public class EnemyMovement : MonoBehaviour
         takeNewPath = true;
     }
 
-    private void ChasePlayer()
+    public void ChasePlayer()
     {
         navMeshAgent.speed = engageSpeed;
         navMeshAgent.SetDestination(player.transform.position);
