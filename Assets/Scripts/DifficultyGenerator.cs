@@ -19,6 +19,22 @@ public class DifficultyGenerator : ScriptableObject
         public float enemyFOVAngle;
 
     }
+
+    private void OnValidate()
+    {
+        AssignLevelNames();
+    }
+
+    private void AssignLevelNames()
+    {
+        if (myLevels != null)
+        {
+            for (int i = 0; i < myLevels.Length; i++)
+            {
+                myLevels[i].levelName = "Level " + (i + 1);
+            }
+        }
+    }
 }
 
 
