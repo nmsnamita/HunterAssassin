@@ -11,13 +11,14 @@ GameObject:
   - component: {fileID: 3375922088757206849}
   - component: {fileID: 5783764020797995594}
   - component: {fileID: 766987426415818811}
-  - component: {fileID: 4953717416492105174}
+  - component: {fileID: 6576214877756927706}
+  - component: {fileID: 43168080642580176}
   m_Layer: 8
   m_Name: Car Purple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 119
   m_IsActive: 1
 --- !u!4 &3375922088757206849
 Transform:
@@ -87,8 +88,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4953717416492105174
-MeshCollider:
+--- !u!65 &6576214877756927706
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -97,7 +98,22 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -744852779493644599, guid: 7cb13e31ffc8292499c3ad8d3eb4c951, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.15570837, y: 0.11223205, z: 0.07314135}
+  m_Center: {x: 0.00053331256, y: 0, z: 0.00053332}
+--- !u!208 &43168080642580176
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4953717416492105175}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.0775, y: 0.056, z: 0.0375}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

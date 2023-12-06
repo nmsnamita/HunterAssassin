@@ -11,13 +11,14 @@ GameObject:
   - component: {fileID: 2920415158698439400}
   - component: {fileID: 7739517822521223042}
   - component: {fileID: 7962291820544328650}
-  - component: {fileID: 908026189155610497}
+  - component: {fileID: 7020473842754975265}
+  - component: {fileID: 8417085211913253659}
   m_Layer: 8
   m_Name: Truck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 119
   m_IsActive: 1
 --- !u!4 &2920415158698439400
 Transform:
@@ -91,8 +92,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &908026189155610497
-MeshCollider:
+--- !u!65 &7020473842754975265
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -101,7 +102,22 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1533489021942263388, guid: 7cb13e31ffc8292499c3ad8d3eb4c951, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.25599474, y: 0.1284098, z: 0.07626292}
+  m_Center: {x: -0.0012724038, y: 0, z: -0.0005089014}
+--- !u!208 &8417085211913253659
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908026189155610496}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.13, y: 0.064, z: 0.04}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
