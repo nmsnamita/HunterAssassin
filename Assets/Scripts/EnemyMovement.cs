@@ -68,6 +68,23 @@ public class EnemyMovement : MonoBehaviour
                 difficultyViewDistance = levels.enemyViewDistance;
             }
         }
+        Debug.Log("difficultylevel"+difficultyLevel);
+        string levelval="";
+        foreach (char item in difficultyLevel)
+        {
+            if(char.IsDigit(item))
+            {
+                levelval+=item;
+
+            }
+            
+        }
+        Debug.Log("levelval" + levelval);
+        if(int.Parse(levelval) >110)
+        {
+            float temp = navMeshAgent.speed;
+            navMeshAgent.speed = temp*1.5f;
+        }
 
         allEnemies.Add(this);
     }
@@ -145,8 +162,9 @@ public class EnemyMovement : MonoBehaviour
         hasSeen = true;
     }
 
-    private void StayIdle()
+    public void StayIdle()
     {
+        goingRandom = false;
         navMeshAgent.SetDestination(transform.position);
         animator.SetBool("EnemyRun", false);
     }
@@ -266,5 +284,11 @@ public class EnemyMovement : MonoBehaviour
             Gizmos.color = Color.yellow;
             Gizmos.DrawLine(transform.position, player.position);
         }
+    }
+    public IEnumerator checkthenoise(Vector3 killpos)
+    {
+        transform.LookAt(killpos);
+        yield return new WaitForSeconds(5f);
+        goingRandom = true;
     }
 }

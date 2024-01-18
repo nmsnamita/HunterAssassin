@@ -8,11 +8,12 @@ public class LevelMenu : MonoBehaviour
 {
     [SerializeField] Button[] buttons;
     public GameObject levelButtons;
+    public Sprite unselected;
 
     private void Awake()
     {
         ButtonsToArray();
-        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+        int unlockedLevel = 111;//PlayerPrefs.GetInt("UnlockedLevel", 1);
         for (int i = 0; i < buttons.Length; i++)
         {
             buttons[i].interactable = false;
@@ -21,6 +22,12 @@ public class LevelMenu : MonoBehaviour
         {
             buttons[i].interactable = true;
         }
+    }
+    private void Update() {
+        // if (Input.GetKeyDown(KeyCode.M))
+        // {
+        //     PlayerPrefs.SetInt("UnlockedLevel",100);
+        // }
     }
 
     public void OpenLevel(int levelId)

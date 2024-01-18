@@ -2269,6 +2269,7 @@ MonoBehaviour:
   shootingParticles: {fileID: 4315287990612016737}
   gunShotSFX: {fileID: 8300000, guid: acdebaea3ce61104585e2ecbcd710886, type: 3}
   difficultyGenerator: {fileID: 11400000, guid: 2f74444dc0bc17e44a7bed7f785142fc, type: 2}
+  damagemultiplier: 1.5
 --- !u!82 &8317710268749417223
 AudioSource:
   m_ObjectHideFlags: 0

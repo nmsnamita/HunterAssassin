@@ -6622,6 +6622,7 @@ MonoBehaviour:
   bloodParticles: {fileID: 3668887993876322968}
   bloodSplash: {fileID: 4451146426906053217, guid: 33852a5686097e041bce58ab1b72b80b, type: 3}
   knifeSFX: {fileID: 8300000, guid: f1286e0f706bb764bbd9c9706c1a70b3, type: 3}
+  manager: {fileID: 6477803591162344938, guid: a4814b1b46197b140b2545bb8510d1ef, type: 3}
 --- !u!114 &5273374718054713765
 MonoBehaviour:
   m_ObjectHideFlags: 0

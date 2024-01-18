@@ -8,6 +8,7 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] ParticleSystem shootingParticles;
     [SerializeField] AudioClip gunShotSFX;
     [SerializeField] DifficultyGenerator difficultyGenerator;
+    [SerializeField] float damagemultiplier;
 
     AudioSource audioSource;
     PlayerHealth target;
@@ -46,7 +47,7 @@ public class EnemyAttack : MonoBehaviour
 
         if (currentSceneName == difficultyLevel)
         {
-            target.TakeDamage(difficultyDamage);
+            target.TakeDamage(difficultyDamage *damagemultiplier);
             shootingParticles.Play();
             PlayGunShotEffect();
         }

@@ -16,9 +16,11 @@ public class PlayerActions : MonoBehaviour
     [SerializeField] ParticleSystem bloodParticles;
     [SerializeField] GameObject bloodSplash;
     [SerializeField] AudioClip knifeSFX;
+    [SerializeField] GameManage manager;
 
     Animator animator;
     AudioSource audioSource;
+    bool drawCircle = false;
 
     void Start()
     {
@@ -56,6 +58,20 @@ public class PlayerActions : MonoBehaviour
         {
             audioSource.PlayOneShot(knifeSFX);
         }
+        drawCircle = !drawCircle;
+        
+    }
+
+    void OnDrawGizmos()
+    {
+        if(drawCircle)
+        {
+            Gizmos.color = Color.blue;
+
+            Gizmos.DrawWireSphere(transform.position, 4f);
+        }
+        
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -70,12 +86,15 @@ public class PlayerActions : MonoBehaviour
                 Instantiate(bloodSplash, other.gameObject.transform.position, Quaternion.identity);
                 StartCoroutine(SpawnGems(other.gameObject.transform.position));
                 Destroy(other.gameObject);
+                manager.enemycount(other.gameObject,transform.position);
+
                 hasAttacked = true;
             }
             else
             {
                 return;
             }
+           
         }
     }
 

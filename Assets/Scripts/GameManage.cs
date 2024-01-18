@@ -117,4 +117,35 @@ public class GameManage : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
+
+    public void enemycount(GameObject killed,Vector3 killpos)
+    {
+        EnemyMovement[] totalEnemies = FindObjectsOfType<EnemyMovement>();
+        List<GameObject> temp = new List<GameObject>();
+        GameObject[] trial = GameObject.FindGameObjectsWithTag("Enemy");
+        for (int i = 0; i < trial.Length; i++)
+        {
+            if(trial[i]!=killed)
+            {
+                temp.Add(trial[i]);
+            }
+            //Debug.Log("the name is " + totalEnemies.GameObject.name);
+        }
+        Debug.Log("the count of enemy" +temp.Count);
+        
+        foreach (GameObject item in temp)
+        {
+            float temp_distance = Vector3.Distance(item.transform.position,killpos);
+            if(temp_distance <6f)
+            {
+                Debug.LogError("the distance of "+item.name+" is: "+temp_distance);
+                item.GetComponent<EnemyMovement>().StayIdle();
+                StartCoroutine(item.GetComponent<EnemyMovement>().checkthenoise(killpos));
+                //item.GetComponent<EnemyMovement>().StartCoroutine(checkthenoise(killpos));
+                
+            }
+            
+        }
+    }
+    
 }
