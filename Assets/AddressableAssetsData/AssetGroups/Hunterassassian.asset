@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Hunterassassian
+  m_EditorClassIdentifier: 
+  m_GroupName: Hunterassassian
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9d5282dbd246e5e4d8cb5e3da3151f57
+  m_SerializeEntries:
+  - m_GUID: 87b42d07d65e35244b73a4b109cbca0c
+    m_Address: Level 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c199dcad29528294d8c359eb91fd4cfa, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4bff00471a2669b49bce25acbbb89f04, type: 2}
+    - {fileID: 11400000, guid: 1374cbe1ac9162a43ad75f92ef809a8b, type: 2}
