@@ -25,13 +25,15 @@ public class LevelButtonNumberUpdater : MonoBehaviour
                 levelButtonText.text = $"{levelNumber}";
 
                 Button levelButton = GetComponent<Button>();
-                levelButton.onClick.AddListener(() => LoadLevel(levelNumber + 2));
+                
+                levelButton.onClick.AddListener(() => LoadLevel(levelNumber-1));
             }
         }
     }
 
     void LoadLevel(int levelNumber)
     {
+        Debug.LogError("Clicked button text: "+levelNumber);
         sceneLoader.LoadScene(levelNumber);
     }
 }
