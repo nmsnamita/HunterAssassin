@@ -81,6 +81,7 @@ public class PlayerData
     public int Player_Character;
     public int levels_Completed;
     public int gems_id;
+    //public List<int> owned;
 
     public PlayerData (int player_id,int levls,int gems)
     {
