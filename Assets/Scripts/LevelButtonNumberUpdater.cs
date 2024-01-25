@@ -33,7 +33,7 @@ public class LevelButtonNumberUpdater : MonoBehaviour
 
     void LoadLevel(int levelNumber)
     {
-        Debug.LogError("Clicked button text: "+levelNumber);
+        //Debug.LogError("Clicked button text: "+levelNumber);
         sceneLoader.LoadScene(levelNumber);
     }
 }

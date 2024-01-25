@@ -85,8 +85,15 @@ public class EnemyMovement : MonoBehaviour
             float temp = navMeshAgent.speed;
             navMeshAgent.speed = temp*1.5f;
         }
-
+        changingspeed(int.Parse(levelval));
         allEnemies.Add(this);
+    }
+
+    void changingspeed(int levl)
+    {
+        float temp = levl/90;
+        int roundvalue = (int)temp;
+        //Debug.LogError("roundname"+roundvalue);
     }
 
     void Update()

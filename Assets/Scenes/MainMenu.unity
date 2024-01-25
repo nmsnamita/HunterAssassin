@@ -1261,7 +1261,7 @@ PrefabInstance:
     - target: {fileID: 8370037951937049122, guid: f565762173549ef49b3f945a9cf3e584, type: 3}
       propertyPath: loadingScreen
       value: 
-      objectReference: {fileID: 870413514}
+      objectReference: {fileID: 4884608307590502640, guid: 8e18f5f81463d0543aef55f33953923a, type: 3}
     - target: {fileID: 8370037951937049122, guid: f565762173549ef49b3f945a9cf3e584, type: 3}
       propertyPath: demoscenes.Array.size
       value: 120
@@ -20583,11 +20583,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &870413514 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4884608307590502640, guid: 8e18f5f81463d0543aef55f33953923a, type: 3}
-  m_PrefabInstance: {fileID: 1688782006}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &884240392
 GameObject:
   m_ObjectHideFlags: 0

@@ -50,7 +50,7 @@ public class MainMenuUIManager : MonoBehaviour
     {
         GameObject child = playerprefab.transform.GetChild(1).gameObject;
         Material[] list  = child.GetComponent<SkinnedMeshRenderer>().sharedMaterials;
-        Debug.LogError("the player has" + list.Length+" materials attached to itself");
+        //Debug.LogError("the player has" + list.Length+" materials attached to itself");
         for (int i = 0; i < list.Length; i++)
         {
             Debug.Log(list[i].name);

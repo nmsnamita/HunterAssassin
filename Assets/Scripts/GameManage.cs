@@ -138,7 +138,7 @@ public class GameManage : MonoBehaviour
             float temp_distance = Vector3.Distance(item.transform.position,killpos);
             if(temp_distance <6f)
             {
-                Debug.LogError("the distance of "+item.name+" is: "+temp_distance);
+                //Debug.LogError("the distance of "+item.name+" is: "+temp_distance);
                 item.GetComponent<EnemyMovement>().StayIdle();
                 StartCoroutine(item.GetComponent<EnemyMovement>().checkthenoise(killpos));
                 //item.GetComponent<EnemyMovement>().StartCoroutine(checkthenoise(killpos));

@@ -24,12 +24,17 @@ public class SceneLoader : MonoBehaviour
 
     private void Start()
     {
+        DontDestroyOnLoad(this.gameObject);
         loadingScreen.SetActive(false);
     }
     private void startscene(AssetReference record)//this reference is also taken from the royal luck project
     {
-    
+        // GameObject spawn =Instantiate(loadingScreen);
+        // GameObject ui = GameObject.Find("Game Canvas");
+        // spawn.transform.SetParent(ui.transform);
+        //Debug.LogError("starting the loading scene");
         SceneHandle = Addressables.DownloadDependenciesAsync(record);
+        
         loadingScreen.SetActive(true);
         StartCoroutine(loadingpercentage());
         SceneHandle.Completed += OnSceneLoaded;
