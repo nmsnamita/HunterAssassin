@@ -1967,7 +1967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fa76802706d8d14ba98d5c5ce275902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 4784259802876154642, guid: c9545204874841845ba73badd08cddad, type: 3}
   chaseRange: 8
   randomPointRadius: 15
   notificationRange: 12
