@@ -27,19 +27,14 @@ public class Gem : MonoBehaviour
 
     private void GoToPlayer()
     {
-        Vector3 distance = player.transform.position - transform.position;
 
-
-        distance = distance.normalized;
-        distance *= force;
-
-        rb.AddForce(distance);
+        transform.position =Vector3.MoveTowards(transform.position,player.transform.position,0.3f);
         DestoryOverAll();
     }
 
     void DestoryOverAll()
     {
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, 10f);
     }
 
     IEnumerator CollectAfterTime()
@@ -47,5 +42,16 @@ public class Gem : MonoBehaviour
         sphereCollider.enabled = false;
         yield return new WaitForSeconds(1f);
         sphereCollider.enabled = true;
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        // Check if the collider belongs to an object with the "Player" or "Ground" tag
+        if(other.gameObject.layer == LayerMask.NameToLayer("Obstruction"))
+        {
+            GetComponent<SphereCollider>().isTrigger =true;
+            GetComponent<BoxCollider>().isTrigger = true;
+        }
+
+        
     }
 }

@@ -15,6 +15,7 @@ public class MainMenuUIManager : MonoBehaviour
     [SerializeField] RewardsButton button3;
     public GameObject playerprefab;
     [SerializeField] Material[] shopextras;
+    [SerializeField] Image[] heartui;
 
     public int gemCount;
 
@@ -28,6 +29,19 @@ public class MainMenuUIManager : MonoBehaviour
         gemCountText.text = gemCount.ToString();
         displayingmaterials();
         changingplayerskin();
+        //int temp = PlayerPrefs.GetInt("lives");
+        for (int i = 0; i < heartui.Length; i++)
+        {
+            int temp = PlayerPrefs.GetInt("lives");
+            if(i < temp)
+            {
+                heartui[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                heartui[i].gameObject.SetActive(false);
+            }
+        }
     }
 
     void Update()

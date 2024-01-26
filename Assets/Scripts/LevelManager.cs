@@ -22,18 +22,20 @@ public class LevelManager : MonoBehaviour
     int ExtractNumber(string input)
     {
         // Loop through each character in the input string
+        string temp ="";
         foreach (char c in input)
         {
             // Check if the character is a digit
             if (char.IsDigit(c))
             {
                 // Parse the digit and return the result
-                return int.Parse(c.ToString());
+                temp+=c;
+                //return int.Parse(c.ToString());
             }
         }
 
         // If no digit is found, return a default value (you can modify this based on your requirement)
-        return -1;
+        return int.Parse(temp);
     }
     
 
@@ -44,6 +46,13 @@ public class LevelManager : MonoBehaviour
 
     public void RestartGame()
     {
+        if(PlayerPrefs.GetInt("lives") <=0)
+        {
+            return;
+        }
+        int temp = PlayerPrefs.GetInt("lives");
+        temp =- 1;
+        PlayerPrefs.SetInt("lives",temp);
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int levelnumber = ExtractNumber(SceneManager.GetActiveScene().name);
         SceneLoader loader = GameObject.Find("SceneLoader").GetComponent<SceneLoader>();

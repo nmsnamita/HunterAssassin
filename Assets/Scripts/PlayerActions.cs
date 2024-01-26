@@ -20,12 +20,14 @@ public class PlayerActions : MonoBehaviour
 
     Animator animator;
     AudioSource audioSource;
+    [SerializeField] GameObject VirtualCamera;
     bool drawCircle = false;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        VirtualCamera = GameObject.FindGameObjectWithTag("virtualcamera");
     }
 
     void Update()
@@ -59,6 +61,7 @@ public class PlayerActions : MonoBehaviour
             audioSource.PlayOneShot(knifeSFX);
         }
         drawCircle = !drawCircle;
+        VirtualCamera.GetComponent<CameraShake>().ShakeCamera();
         
     }
 

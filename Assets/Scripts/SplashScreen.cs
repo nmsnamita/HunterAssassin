@@ -17,7 +17,7 @@ public class SplashScreen : MonoBehaviour
     private void Start()
     {
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
+        PlayerPrefs.SetInt("lives",3);
         StartCoroutine(FadeInAndOut());
     }
 
