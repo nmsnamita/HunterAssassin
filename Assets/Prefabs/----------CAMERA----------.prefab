@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7225770535566247912}
   m_LocalRotation: {x: 0.5735764, y: -0, z: -0, w: 0.8191521}
-  m_LocalPosition: {x: -6.13, y: 19.38807, z: -10.296683}
+  m_LocalPosition: {x: -2.9478936, y: 9.978338, z: 1.2425623}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7225770536558367484}
@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 4898921916902196231}
   m_Layer: 0
   m_Name: Virtual Cam
-  m_TagString: Untagged
+  m_TagString: virtualcamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -240,6 +240,7 @@ GameObject:
   - component: {fileID: 7225770536509919966}
   - component: {fileID: 7225770536509919955}
   - component: {fileID: 7225770536509919953}
+  - component: {fileID: 4179865456134064514}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -316,6 +317,23 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
+--- !u!114 &4179865456134064514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7225770536509919967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 1
+  m_FrequencyGain: 1
+  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &7225770536558367485
 GameObject:
   m_ObjectHideFlags: 0
