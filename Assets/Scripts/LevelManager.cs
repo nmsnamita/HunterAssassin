@@ -53,12 +53,20 @@ public class LevelManager : MonoBehaviour
         int temp = PlayerPrefs.GetInt("lives");
         temp =- 1;
         PlayerPrefs.SetInt("lives",temp);
+        gettinglives();
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int levelnumber = ExtractNumber(SceneManager.GetActiveScene().name);
         SceneLoader loader = GameObject.Find("SceneLoader").GetComponent<SceneLoader>();
         loader.LoadScene(levelnumber-1);
         //SceneManager.LoadScene(currentSceneIndex);
         Time.timeScale = 1f;
+    }
+
+    public void gettinglives()
+    {
+        System.DateTime timesaved = System.DateTime.Now;
+        string stored = timesaved .ToString();
+        PlayerPrefs.SetString("savedtimer",stored);
     }
 
     public void OpenMainMenu()

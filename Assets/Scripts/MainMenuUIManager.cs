@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using TMPro;
 using System.Linq.Expressions;
 
+using System;
+
 public class MainMenuUIManager : MonoBehaviour
 {
     [SerializeField] TMP_Text gemCountText;
@@ -16,6 +18,8 @@ public class MainMenuUIManager : MonoBehaviour
     public GameObject playerprefab;
     [SerializeField] Material[] shopextras;
     [SerializeField] Image[] heartui;
+    [SerializeField] GameObject timer_ui;
+    private TMP_Text timer;
 
     public int gemCount;
 
@@ -24,7 +28,7 @@ public class MainMenuUIManager : MonoBehaviour
         button1.Initialize(this);
         button2.Initialize(this);
         button3.Initialize(this);
-
+        timer = timer_ui.GetComponent<TextMeshProUGUI>();
         gemCount = PlayerDataManager.LoadGemCount();
         gemCountText.text = gemCount.ToString();
         displayingmaterials();
@@ -42,6 +46,7 @@ public class MainMenuUIManager : MonoBehaviour
                 heartui[i].gameObject.SetActive(false);
             }
         }
+        regeneratelives();
     }
 
     void Update()
@@ -81,6 +86,60 @@ public class MainMenuUIManager : MonoBehaviour
         child.GetComponent<SkinnedMeshRenderer>().sharedMaterials =list;
         changepayerfacts();
     }
+    void regeneratelives()
+    {
+        int temp = PlayerPrefs.GetInt("lives");
+        if(temp <5)
+        {
+            string stored = PlayerPrefs.GetString("savedtimer");
+            DateTime startTime = DateTime.Parse(stored);
+            DateTime endTime = System.DateTime.Now;
+            System.TimeSpan timeDifference = endTime - startTime;
+            Debug.Log("TimeDifference is :"+ timeDifference.Minutes);
+            if(timeDifference.Minutes <30)
+            {
+                //start tiem timer with the value
+            }
+            else
+            {
+                timer_ui.SetActive(true);
+                int divided = timeDifference.Minutes/30;
+                int newlives = temp + divided;
+                if(divided >=5)
+                {
+                    divided = 5;
+                }
+                else
+                {
+                    int justfornow = timeDifference.Minutes;
+                    int remainder = justfornow-(30*divided);
+                }
+            }
+        }
+    }
+    IEnumerator starttimer(int x,int y)
+    {
+        int min = x;
+        int sec = y;
+        if((sec >0) && min >0)
+        {
+            sec--;
+        }
+        else if(sec == 0 && min >0)
+        {
+            sec =59;
+            min --;
+        }
+        else if(sec ==0 && min ==0)
+        {
+            StopCoroutine(starttimer(0,0));
+        }
+        string showtimer = (min +"M "+ sec+"s").ToString();
+        timer.text = showtimer;
+        yield return new WaitForSecondsRealtime(1f);
+        StartCoroutine(starttimer(min,sec));
+    }
+    
 
     void changepayerfacts()
     {
@@ -120,5 +179,9 @@ public class MainMenuUIManager : MonoBehaviour
             playerprefab.GetComponent<PlayerHealth>().hitPoints = health;
 
         }
+    }
+    public void testing()
+    {
+        PlayerPrefs.SetInt("lives",5);
     }
 }
