@@ -51,7 +51,7 @@ public class LevelManager : MonoBehaviour
             return;
         }
         int temp = PlayerPrefs.GetInt("lives");
-        temp =- 1;
+        temp-- ;
         PlayerPrefs.SetInt("lives",temp);
         gettinglives();
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;

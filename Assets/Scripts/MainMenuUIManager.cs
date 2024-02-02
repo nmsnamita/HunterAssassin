@@ -34,6 +34,7 @@ public class MainMenuUIManager : MonoBehaviour
         displayingmaterials();
         changingplayerskin();
         //int temp = PlayerPrefs.GetInt("lives");
+        Debug.Log("lives remaining"+ PlayerPrefs.GetInt("lives"));
         for (int i = 0; i < heartui.Length; i++)
         {
             int temp = PlayerPrefs.GetInt("lives");
@@ -98,6 +99,7 @@ public class MainMenuUIManager : MonoBehaviour
             Debug.Log("TimeDifference is :"+ timeDifference.Minutes);
             if(timeDifference.Minutes <30)
             {
+                StartCoroutine(starttimer(30-timeDifference.Minutes,0));
                 //start tiem timer with the value
             }
             else
@@ -108,11 +110,13 @@ public class MainMenuUIManager : MonoBehaviour
                 if(divided >=5)
                 {
                     divided = 5;
+                    timer_ui.SetActive(false);
                 }
                 else
                 {
                     int justfornow = timeDifference.Minutes;
                     int remainder = justfornow-(30*divided);
+                    StartCoroutine(starttimer(remainder,0));
                 }
             }
         }
