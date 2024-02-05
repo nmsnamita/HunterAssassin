@@ -68,7 +68,7 @@ public class EnemyMovement : MonoBehaviour
                 difficultyViewDistance = levels.enemyViewDistance;
             }
         }
-        Debug.Log("difficultylevel"+difficultyLevel);
+        //Debug.Log("difficultylevel"+difficultyLevel);
         string levelval="";
         foreach (char item in difficultyLevel)
         {
@@ -79,7 +79,7 @@ public class EnemyMovement : MonoBehaviour
             }
             
         }
-        Debug.Log("levelval" + levelval);
+        //Debug.Log("levelval" + levelval);
         if(int.Parse(levelval) >110)
         {
             float temp = navMeshAgent.speed;
@@ -297,5 +297,11 @@ public class EnemyMovement : MonoBehaviour
         transform.LookAt(killpos);
         yield return new WaitForSeconds(5f);
         goingRandom = true;
+        TakeRandomPath();
+    }
+    public void alerted(Vector3 killed)
+    {
+        StayIdle();
+        StartCoroutine(checkthenoise(killed));
     }
 }
