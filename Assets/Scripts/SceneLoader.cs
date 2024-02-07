@@ -77,7 +77,7 @@ public class SceneLoader : MonoBehaviour
     IEnumerator loadingpercentage()
     {
         loadingBar.value = SceneHandle.GetDownloadStatus().Percent;
-        Debug.Log("////////////////////////////"+ SceneHandle.GetDownloadStatus().Percent);
+        //Debug.Log("////////////////////////////"+ SceneHandle.GetDownloadStatus().Percent);
         yield return new WaitForSeconds(0.2f);
         StartCoroutine(loadingpercentage());
     }

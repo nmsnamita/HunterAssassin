@@ -10,18 +10,24 @@ public class LevelMenu : MonoBehaviour
     public GameObject levelButtons;
     public Sprite unselected;
 
-    private void Awake()
+    private void OnEnable()
     {
         ButtonsToArray();
-        int unlockedLevel = 111;//PlayerPrefs.GetInt("UnlockedLevel", 1);
-        for (int i = 0; i < buttons.Length; i++)
-        {
-            buttons[i].interactable = false;
-        }
-        for (int i = 0; i < unlockedLevel; i++)
+        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+        Debug.Log("Levels reached"+ unlockedLevel);
+        for (int i = 0; i < 350; i++)
         {
             buttons[i].interactable = true;
+           // Debug.Log("Success");
         }
+        // for (int i = 0; i < buttons.Length; i++)
+        // {
+        //     buttons[i].interactable = false;
+        // }
+        // for (int i = 0; i < unlockedLevel; i++)
+        // {
+        //     buttons[i].interactable = true;
+        // }
     }
     private void Update() {
         // if (Input.GetKeyDown(KeyCode.M))

@@ -76,11 +76,12 @@ public class MainMenuUIManager : MonoBehaviour
             Debug.Log(list[i].name);
         }
     }
-    void changingplayerskin()
+    public void changingplayerskin()
     {
         GameObject child = playerprefab.transform.GetChild(1).gameObject;
         Material[] list  = child.GetComponent<SkinnedMeshRenderer>().sharedMaterials;
         int temp = PlayerPrefs.GetInt("PlayerType");
+        Debug.Log("PlayerType"+temp);
         list[1] = shopextras[temp];
         list[5] = shopextras[temp];
         list[8] = shopextras[temp];
@@ -150,7 +151,7 @@ public class MainMenuUIManager : MonoBehaviour
         int temp = PlayerPrefs.GetInt("PlayerType");
         if(temp%2 == 0)//playerprefs was even
         {
-            float initialspeed =playerprefab.GetComponent<PlayerMovement>().playerMoveSpeed;
+            float initialspeed =5;//playerprefab.GetComponent<PlayerMovement>().playerMoveSpeed; // initail player speed was 5 and player hit point was 100
             switch (temp)
             {
                 
@@ -167,7 +168,7 @@ public class MainMenuUIManager : MonoBehaviour
         }
         else
         {
-            float health = playerprefab.GetComponent<PlayerHealth>().hitPoints;
+            float health = 100;//playerprefab.GetComponent<PlayerHealth>().hitPoints;
             switch (temp)
             {
                 

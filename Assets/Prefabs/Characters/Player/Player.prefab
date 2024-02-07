@@ -706,14 +706,14 @@ SkinnedMeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 2428140c8053c1848a1b9343045dc144, type: 2}
-  - {fileID: 2100000, guid: 973c0bddc85bf044fbd0637edbc67248, type: 2}
+  - {fileID: 2100000, guid: 03e47d9011cac7841a4f6274a5a7b433, type: 2}
   - {fileID: 2100000, guid: 0cc44a773dbebd343b98d947d694ff6e, type: 2}
   - {fileID: 2100000, guid: b8540e53ef917344c9de1df38ae29391, type: 2}
   - {fileID: 2100000, guid: f9bb2345e58e51d47b79db55e8bcafad, type: 2}
-  - {fileID: 2100000, guid: 973c0bddc85bf044fbd0637edbc67248, type: 2}
+  - {fileID: 2100000, guid: 03e47d9011cac7841a4f6274a5a7b433, type: 2}
   - {fileID: 2100000, guid: 2341ee5b6fd5c5d49a60e38c6a425ac6, type: 2}
   - {fileID: 2100000, guid: be788eab68682784dabf0759b1ae8557, type: 2}
-  - {fileID: 2100000, guid: 973c0bddc85bf044fbd0637edbc67248, type: 2}
+  - {fileID: 2100000, guid: 03e47d9011cac7841a4f6274a5a7b433, type: 2}
   - {fileID: 2100000, guid: 9670be5f2868b2244867b153b6a8d063, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -6600,7 +6600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c8a2d61776e52e449991195219f7734, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 6626.409
+  hitPoints: 133.1
   deathParticles: {fileID: 8427568588523177445, guid: 162fb9e1840482d40a386dc011e317ba, type: 3}
 --- !u!114 &5273374718054713762
 MonoBehaviour:

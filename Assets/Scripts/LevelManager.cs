@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 using System.Xml.Serialization;
+using UnityEngine.UIElements;
 
 public class LevelManager : MonoBehaviour
 {
@@ -15,6 +16,14 @@ public class LevelManager : MonoBehaviour
         //string temp = SceneManager.GetActiveScene().name;
         Debug.Log("the name of the scene is"+levelnumber);
         SceneLoader loader = GameObject.Find("SceneLoader").GetComponent<SceneLoader>();
+        int temo = PlayerPrefs.GetInt("UnlockedLevel");
+        if (levelnumber+1 >temo)
+        {
+            PlayerPrefs.SetInt("UnlockedLevel",levelnumber+1);
+            Debug.Log("playerprefs" + temo + " levelnumber"+levelnumber+1);
+            GameObject.FindGameObjectWithTag("data").GetComponent<GameData>().leveldata();
+            //GameData.leveldata();
+        }
         loader.LoadScene(levelnumber);
         //SceneManager.LoadScene(currentSceneIndex + 1);
     }
