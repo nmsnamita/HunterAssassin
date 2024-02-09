@@ -37,7 +37,7 @@ public class MainMenuUIManager : MonoBehaviour
         Debug.Log("lives remaining"+ PlayerPrefs.GetInt("lives"));
         for (int i = 0; i < heartui.Length; i++)
         {
-            int temp = PlayerPrefs.GetInt("lives");
+            int temp = PlayerPrefs.GetInt("lives",5);
             if(i < temp)
             {
                 heartui[i].gameObject.SetActive(true);
@@ -108,7 +108,8 @@ public class MainMenuUIManager : MonoBehaviour
                 timer_ui.SetActive(true);
                 int divided = timeDifference.Minutes/30;
                 int newlives = temp + divided;
-                if(divided >=5)
+                
+                if(newlives >=5)
                 {
                     divided = 5;
                     timer_ui.SetActive(false);
@@ -119,6 +120,7 @@ public class MainMenuUIManager : MonoBehaviour
                     int remainder = justfornow-(30*divided);
                     StartCoroutine(starttimer(remainder,0));
                 }
+                PlayerPrefs.SetInt("lives",newlives);
             }
         }
     }

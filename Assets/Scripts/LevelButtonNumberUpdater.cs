@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class LevelButtonNumberUpdater : MonoBehaviour
 {
     [SerializeField] SceneLoader sceneLoader;
+    [SerializeField] GameObject loadingscreen;
 
     void Start()
     {
@@ -34,6 +35,7 @@ public class LevelButtonNumberUpdater : MonoBehaviour
     void LoadLevel(int levelNumber)
     {
         //Debug.LogError("Clicked button text: "+levelNumber);
+        loadingscreen.SetActive(true);
         sceneLoader.LoadScene(levelNumber);
     }
 }
