@@ -3,12 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
+
+
 
 public class SplashScreen : MonoBehaviour
 {
     [SerializeField] CanvasGroup canvasGroup;
     [SerializeField] float timeToFade;
-    [SerializeField] float afterFadeDelay = 3f;
+    [SerializeField] float afterFadeDelay = 1f;
 
     public bool fadeIn = false;
     public bool fadeout = false;
@@ -17,8 +21,9 @@ public class SplashScreen : MonoBehaviour
     private void Start()
     {
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        PlayerPrefs.SetInt("lives",3);
+        //PlayerPrefs.SetInt("lives",3);
         StartCoroutine(FadeInAndOut());
+        StartCoroutine(downloadassets());
     }
 
     private void Update()
@@ -54,6 +59,39 @@ public class SplashScreen : MonoBehaviour
         FadeIn();
         yield return new WaitForSeconds(afterFadeDelay);
         SceneManager.LoadScene(currentSceneIndex + 1);
+    }
+
+    IEnumerator downloadassets()
+    {
+        AsyncOperationHandle downloadHandle = Addressables.DownloadDependenciesAsync("Hunterassassian");
+        yield return downloadHandle;
+        if (downloadHandle.Status == AsyncOperationStatus.Succeeded)
+        {
+            Debug.Log("Scenes downloaded successfully.");
+        }
+        else
+        {
+            Debug.LogError("Failed to download scenes: " + downloadHandle.Status);
+        }
+
+    }
+    void PrintGroupName()
+    {
+        // Get the Addressable asset settings
+        AddressableAssetSettings settings = AddressableAssetSettingsDefaultObject.Settings;
+
+        if (settings != null && settings.groups.Count > 0)
+        {
+            // Get the name of the first (and only) group
+            string groupName = settings.groups[0].Name;
+            
+            // Print the group name
+            Debug.Log("Addressable Group Name: " + groupName);
+        }
+        else
+        {
+            Debug.LogError("No Addressable groups found.");
+        }
     }
 
     public void FadeIn()

@@ -767,8 +767,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 1226655228}
-  timeToFade: 1
-  afterFadeDelay: 2
+  timeToFade: 0.5
+  afterFadeDelay: 1.5
   fadeIn: 0
   fadeout: 0
 --- !u!4 &1226165197
