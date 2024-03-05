@@ -531,7 +531,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7225770535566247917, guid: ceb6cd6a83cc04944be21dcb31c68b62, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.9478936
+      value: -3.633
       objectReference: {fileID: 0}
     - target: {fileID: 7225770535566247917, guid: ceb6cd6a83cc04944be21dcb31c68b62, type: 3}
       propertyPath: m_LocalPosition.y
@@ -866,7 +866,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1478647588606495080, guid: c9545204874841845ba73badd08cddad, type: 3}
       propertyPath: m_WarningMessage
-      value: 
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
+        'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'mixamo.com'\n\tFrom
+        animation clip 'Take 001'"
       objectReference: {fileID: 0}
     - target: {fileID: 2319781440097275040, guid: c9545204874841845ba73badd08cddad, type: 3}
       propertyPath: m_IsActive
@@ -971,6 +978,14 @@ PrefabInstance:
     - target: {fileID: 5273374718054713768, guid: c9545204874841845ba73badd08cddad, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593822253450755197, guid: c9545204874841845ba73badd08cddad, type: 3}
+      propertyPath: radius
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593822253450755197, guid: c9545204874841845ba73badd08cddad, type: 3}
+      propertyPath: obstructionMask.m_Bits
+      value: 832
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9545204874841845ba73badd08cddad, type: 3}
@@ -2597,6 +2612,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 488336457}
+    - target: {fileID: 7373145104294509663, guid: 70bc72213d34aa74ab9ee9d7edae577a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7373145104294509663, guid: 70bc72213d34aa74ab9ee9d7edae577a, type: 3}
       propertyPath: goingRandom
       value: 1
@@ -5329,6 +5348,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 488336457}
+    - target: {fileID: 7373145104294509663, guid: 70bc72213d34aa74ab9ee9d7edae577a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7373145104294509663, guid: 70bc72213d34aa74ab9ee9d7edae577a, type: 3}
       propertyPath: goingRandom
       value: 1

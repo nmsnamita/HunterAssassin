@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,6 +18,8 @@ public class VisionCone : MonoBehaviour
     string difficultyLevel;
     float difficultyFOV;
     float difficultyViewDistance;
+    [SerializeField] float newangle;
+    [SerializeField] float newdistance;
 
     void Start()
     {
@@ -48,6 +51,11 @@ public class VisionCone : MonoBehaviour
 
     void DrawVisionCone()
     {
+        if(this.gameObject.transform.parent.gameObject.tag == "Player")
+        {
+            difficultyFOV = newangle;
+            difficultyViewDistance = newdistance;
+        }
         int[] triangles = new int[(VisionConeResolution - 1) * 3];
         Vector3[] Vertices = new Vector3[VisionConeResolution + 1];
         Vertices[0] = Vector3.zero;

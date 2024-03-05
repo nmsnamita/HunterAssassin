@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class PlayerMovement : MonoBehaviour
@@ -21,11 +22,14 @@ public class PlayerMovement : MonoBehaviour
     GameManage gameManage;
     AudioSource audioSource;
     ShowSettings showSettings;
+    Mesh VisionConeMesh;
 
     string groundTag = "Ground";
     string collectibleTag = "Collectible";
     string enemyTag = "Enemy";
     bool walking;
+    private LayerMask targetMask;
+
 
     void Start()
     {
@@ -39,7 +43,8 @@ public class PlayerMovement : MonoBehaviour
 
         lineRenderer.positionCount = 0;
         navMeshAgent.speed = playerMoveSpeed;
-
+        //int currentlevel = int.Parse(SceneManager.GetActiveScene().name);
+        //Debug.Log("the current level is "+ currentlevel);
     }
     void Update()
     {
@@ -112,12 +117,60 @@ public class PlayerMovement : MonoBehaviour
         }
         navMeshAgent.SetDestination(targetEnemy.position);
     }
+    public void StopMovement()
+    {
+        navMeshAgent.isStopped = true;
+    }
 
     private void ActivateClickMarker()
     {
         clickmarkerPrefab.transform.SetParent(visualObjects);
         clickmarkerPrefab.SetActive(true);
     }
+        int VisionConeResolution = 120;
+        float difficultyFOV = 120f;
+        float difficultyViewDistance = 5f;
+        [SerializeField] LayerMask VisionObstructingLayer;
+        MeshFilter MeshFilter_;
+    // void DrawVisionCone()
+    // {
+    //     int[] triangles = new int[(VisionConeResolution - 1) * 3];
+    //     Vector3[] Vertices = new Vector3[VisionConeResolution + 1];
+    //     Vertices[0] = Vector3.zero;
+    //     float Currentangle = -difficultyFOV / 2;
+    //     float angleIcrement = difficultyFOV / (VisionConeResolution - 1);
+    //     float Sine;
+    //     float Cosine;
+
+    //     for (int i = 0; i < VisionConeResolution; i++)
+    //     {
+    //         Sine = Mathf.Sin(Currentangle);
+    //         Cosine = Mathf.Cos(Currentangle);
+    //         Vector3 RaycastDirection = (transform.forward * Cosine) + (transform.right * Sine);
+    //         Vector3 VertForward = (Vector3.forward * Cosine) + (Vector3.right * Sine);
+    //         if (Physics.Raycast(transform.position, RaycastDirection, out RaycastHit hit, difficultyViewDistance, VisionObstructingLayer))
+    //         {
+    //             Vertices[i + 1] = VertForward * hit.distance;
+    //         }
+    //         else
+    //         {
+    //             Vertices[i + 1] = VertForward * difficultyViewDistance;
+    //         }
+
+
+    //         Currentangle += angleIcrement;
+    //     }
+    //     for (int i = 0, j = 0; i < triangles.Length; i += 3, j++)
+    //     {
+    //         triangles[i] = 0;
+    //         triangles[i + 1] = j + 1;
+    //         triangles[i + 2] = j + 2;
+    //     }
+    //     VisionConeMesh.Clear();
+    //     VisionConeMesh.vertices = Vertices;
+    //     VisionConeMesh.triangles = triangles;
+    //     MeshFilter_.mesh = VisionConeMesh;
+    // }
 
     void DisplayPath()
     {

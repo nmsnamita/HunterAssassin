@@ -1,0 +1,1098 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd898564f68a50544871289f784e13cd, type: 3}
+  m_Name: Weapom Selector
+  m_EditorClassIdentifier: 
+  mylevels:
+  - levelName: Level 1
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 2
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 3
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 4
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 5
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 6
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 7
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 8
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 9
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 10
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 11
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 12
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 13
+    weapon: Shotgun
+    selected_weapon: 0
+  - levelName: Level 14
+    weapon: Shotgun
+    selected_weapon: 0
+  - levelName: Level 15
+    weapon: Shotgun
+    selected_weapon: 0
+  - levelName: Level 16
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 17
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 18
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 19
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 20
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 21
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 22
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 23
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 24
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 25
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 26
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 27
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 28
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 29
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 30
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 31
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 32
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 33
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 34
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 35
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 36
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 37
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 38
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 39
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 40
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 41
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 42
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 43
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 44
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 45
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 46
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 47
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 48
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 49
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 50
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 51
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 52
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 53
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 54
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 55
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 56
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 57
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 58
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 59
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 60
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 61
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 62
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 63
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 64
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 65
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 66
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 67
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 68
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 69
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 70
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 71
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 72
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 73
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 74
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 75
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 76
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 77
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 78
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 79
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 80
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 81
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 82
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 83
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 84
+    weapon: Shotgun
+    selected_weapon: 0
+  - levelName: Level 85
+    weapon: Shotgun
+    selected_weapon: 0
+  - levelName: Level 86
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 87
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 88
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 89
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 90
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 91
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 92
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 93
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 94
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 95
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 96
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 97
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 98
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 99
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 100
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 101
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 102
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 103
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 104
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 105
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 106
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 107
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 108
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 109
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 110
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 111
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 112
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 113
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 114
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 115
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 116
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 117
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 118
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 119
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 120
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 121
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 122
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 123
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 124
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 125
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 126
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 127
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 128
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 129
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 130
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 131
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 132
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 133
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 134
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 135
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 136
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 137
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 138
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 139
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 140
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 141
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 142
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 143
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 144
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 145
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 146
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 147
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 148
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 149
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 150
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 151
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 152
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 153
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 154
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 155
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 156
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 157
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 158
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 159
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 160
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 161
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 162
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 163
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 164
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 165
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 166
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 167
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 168
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 169
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 170
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 171
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 172
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 173
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 174
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 175
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 176
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 177
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 178
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 179
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 180
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 181
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 182
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 183
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 184
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 185
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 186
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 187
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 188
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 189
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 190
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 191
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 192
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 193
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 194
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 195
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 196
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 197
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 198
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 199
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 200
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 201
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 202
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 203
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 204
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 205
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 206
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 207
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 208
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 209
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 210
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 211
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 212
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 213
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 214
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 215
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 216
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 217
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 218
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 219
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 220
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 221
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 222
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 223
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 224
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 225
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 226
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 227
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 228
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 229
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 230
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 231
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 232
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 233
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 234
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 235
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 236
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 237
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 238
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 239
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 240
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 241
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 242
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 243
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 244
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 245
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 246
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 247
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 248
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 249
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 250
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 251
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 252
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 253
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 254
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 255
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 256
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 257
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 258
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 259
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 260
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 261
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 262
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 263
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 264
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 265
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 266
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 267
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 268
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 269
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 270
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 271
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 272
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 273
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 274
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 275
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 276
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 277
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 278
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 279
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 280
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 281
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 282
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 283
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 284
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 285
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 286
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 287
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 288
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 289
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 290
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 291
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 292
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 293
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 294
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 295
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 296
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 297
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 298
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 299
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 300
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 301
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 302
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 303
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 304
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 305
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 306
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 307
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 308
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 309
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 310
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 311
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 312
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 313
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 314
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 315
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 316
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 317
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 318
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 319
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 320
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 321
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 322
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 323
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 324
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 325
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 326
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 327
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 328
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 329
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 330
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 331
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 332
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 333
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 334
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 335
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 336
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 337
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 338
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 339
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 340
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 341
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 342
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 343
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 344
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 345
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 346
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 347
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 348
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 349
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 350
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 351
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 352
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 353
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 354
+    weapon: Knife
+    selected_weapon: 0
+  - levelName: Level 355
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 356
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 357
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 358
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 359
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 360
+    weapon: Shotgun
+    selected_weapon: 1
+  - levelName: Level 361
+    weapon: Shotgun
+    selected_weapon: 1

@@ -123,6 +123,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 90929916508b05e4ab2a5004b4110849, type: 2}
+--- !u!1 &128603004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 128603005}
+  m_Layer: 6
+  m_Name: Detectionpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &128603005
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128603004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.097, z: 0.218}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 488336457}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &133080055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -325,6 +355,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 488336457}
     - target: {fileID: 7373145104294509663, guid: 70bc72213d34aa74ab9ee9d7edae577a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7373145104294509663, guid: 70bc72213d34aa74ab9ee9d7edae577a, type: 3}
       propertyPath: goingRandom
       value: 1
       objectReference: {fileID: 0}
@@ -413,7 +447,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3370255011159215044, guid: e50958821a4a57b40b9f9a6be2ccf054, type: 3}
       propertyPath: m_WarningMessage
-      value: 
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
+        'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'enemy3_shooting'\n\tFrom
+        animation clip 'mixamo.com'\n\tFrom animation clip 'Take 001'\n\tFrom animation
+        clip 'sheriff shoot'"
       objectReference: {fileID: 0}
     - target: {fileID: 4315287990612016737, guid: e50958821a4a57b40b9f9a6be2ccf054, type: 3}
       propertyPath: playOnAwake
@@ -423,6 +465,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 488336457}
+    - target: {fileID: 8317710268749417217, guid: e50958821a4a57b40b9f9a6be2ccf054, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8317710268749417217, guid: e50958821a4a57b40b9f9a6be2ccf054, type: 3}
       propertyPath: goingRandom
       value: 1
@@ -723,7 +769,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3370255011159215044, guid: e50958821a4a57b40b9f9a6be2ccf054, type: 3}
       propertyPath: m_WarningMessage
-      value: 
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
+        'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'enemy3_shooting'\n\tFrom
+        animation clip 'mixamo.com'\n\tFrom animation clip 'Take 001'\n\tFrom animation
+        clip 'sheriff shoot'"
       objectReference: {fileID: 0}
     - target: {fileID: 4315287990612016737, guid: e50958821a4a57b40b9f9a6be2ccf054, type: 3}
       propertyPath: playOnAwake
@@ -733,6 +787,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 488336457}
+    - target: {fileID: 8317710268749417217, guid: e50958821a4a57b40b9f9a6be2ccf054, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8317710268749417217, guid: e50958821a4a57b40b9f9a6be2ccf054, type: 3}
       propertyPath: goingRandom
       value: 1
@@ -869,7 +927,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7225770535566247917, guid: ceb6cd6a83cc04944be21dcb31c68b62, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.9575095
+      value: 3.8360515
       objectReference: {fileID: 0}
     - target: {fileID: 7225770535566247917, guid: ceb6cd6a83cc04944be21dcb31c68b62, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1100,6 +1158,57 @@ CanvasGroup:
   m_CorrespondingSourceObject: {fileID: 8920320957360494611, guid: eacd6ca1b5042e54d8435c025b62f4e6, type: 3}
   m_PrefabInstance: {fileID: 993393499}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1017305048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1017305049}
+  - component: {fileID: 1017305050}
+  m_Layer: 7
+  m_Name: Vision Cone (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1017305049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017305048}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 488336457}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1017305050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017305048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f618d953d7440849961e11b1c90b6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisionConeMaterial: {fileID: 2100000, guid: ba229965ae380324f9ab1ab862a7d6bd, type: 2}
+  VisionObstructingLayer:
+    serializedVersion: 2
+    m_Bits: 448
+  VisionConeResolution: 45
+  difficultyGenerator: {fileID: 11400000, guid: 2f74444dc0bc17e44a7bed7f785142fc, type: 2}
+  newangle: 0.5
+  newdistance: 2
 --- !u!1001 &1024902341
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1166,7 +1275,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3370255011159215044, guid: e50958821a4a57b40b9f9a6be2ccf054, type: 3}
       propertyPath: m_WarningMessage
-      value: 
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
+        'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'enemy3_shooting'\n\tFrom
+        animation clip 'mixamo.com'\n\tFrom animation clip 'Take 001'\n\tFrom animation
+        clip 'sheriff shoot'"
       objectReference: {fileID: 0}
     - target: {fileID: 4315287990612016737, guid: e50958821a4a57b40b9f9a6be2ccf054, type: 3}
       propertyPath: playOnAwake
@@ -1176,6 +1293,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 488336457}
+    - target: {fileID: 8317710268749417217, guid: e50958821a4a57b40b9f9a6be2ccf054, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8317710268749417217, guid: e50958821a4a57b40b9f9a6be2ccf054, type: 3}
       propertyPath: goingRandom
       value: 1
@@ -1239,7 +1360,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1478647588606495080, guid: c9545204874841845ba73badd08cddad, type: 3}
       propertyPath: m_WarningMessage
-      value: 
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
+        'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'mixamo.com'\n\tFrom
+        animation clip 'Take 001'"
       objectReference: {fileID: 0}
     - target: {fileID: 4784259802876154642, guid: c9545204874841845ba73badd08cddad, type: 3}
       propertyPath: m_RootOrder
@@ -1285,6 +1413,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4851644104891875929, guid: c9545204874841845ba73badd08cddad, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5273374718054713760, guid: c9545204874841845ba73badd08cddad, type: 3}
       propertyPath: footStepAS
       value: 
@@ -1297,9 +1429,21 @@ PrefabInstance:
       propertyPath: cinemachineCamera
       value: 
       objectReference: {fileID: 901995335}
+    - target: {fileID: 5273374718054713760, guid: c9545204874841845ba73badd08cddad, type: 3}
+      propertyPath: VisionObstructingLayer.m_Bits
+      value: 448
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273374718054713762, guid: c9545204874841845ba73badd08cddad, type: 3}
+      propertyPath: enemydetection.m_Bits
+      value: 192
+      objectReference: {fileID: 0}
     - target: {fileID: 5273374718054713768, guid: c9545204874841845ba73badd08cddad, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593962935752812025, guid: c9545204874841845ba73badd08cddad, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9545204874841845ba73badd08cddad, type: 3}
@@ -1360,6 +1504,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cd8728d8b1c1164781d73d0a2110ccd, type: 3}
+--- !u!4 &1245126320 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4851644104891875929, guid: c9545204874841845ba73badd08cddad, type: 3}
+  m_PrefabInstance: {fileID: 1212083769}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1258883873
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,6 +1642,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1280747000 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5273374718054713768, guid: c9545204874841845ba73badd08cddad, type: 3}
+  m_PrefabInstance: {fileID: 1212083769}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1280747012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280747000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac36961ac212dad429cfdeb934fa5241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+    serializedVersion: 2
+    m_Bits: 128
+  startpoint: {fileID: 1245126320}
+  weapons: {fileID: 11400000, guid: 8ae83fd2f19ee55489ae838fcf61e6f4, type: 2}
 --- !u!1001 &1295106397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1516,6 +1687,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 488336457}
+    - target: {fileID: 7373145104294509663, guid: 70bc72213d34aa74ab9ee9d7edae577a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7373145104294509663, guid: 70bc72213d34aa74ab9ee9d7edae577a, type: 3}
       propertyPath: goingRandom
       value: 1
@@ -2271,6 +2446,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 488336457}
     - target: {fileID: 7373145104294509663, guid: 70bc72213d34aa74ab9ee9d7edae577a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7373145104294509663, guid: 70bc72213d34aa74ab9ee9d7edae577a, type: 3}
       propertyPath: goingRandom
       value: 1
       objectReference: {fileID: 0}
@@ -2425,7 +2604,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3370255011159215044, guid: e50958821a4a57b40b9f9a6be2ccf054, type: 3}
       propertyPath: m_WarningMessage
-      value: 
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
+        'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'enemy3_shooting'\n\tFrom
+        animation clip 'mixamo.com'\n\tFrom animation clip 'Take 001'\n\tFrom animation
+        clip 'sheriff shoot'"
       objectReference: {fileID: 0}
     - target: {fileID: 4315287990612016737, guid: e50958821a4a57b40b9f9a6be2ccf054, type: 3}
       propertyPath: playOnAwake
@@ -2435,6 +2622,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 488336457}
+    - target: {fileID: 8317710268749417217, guid: e50958821a4a57b40b9f9a6be2ccf054, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8317710268749417217, guid: e50958821a4a57b40b9f9a6be2ccf054, type: 3}
       propertyPath: goingRandom
       value: 1

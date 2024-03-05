@@ -132,7 +132,7 @@ public class GameManage : MonoBehaviour
             }
             //Debug.Log("the name is " + totalEnemies.GameObject.name);
         }
-        Debug.Log("the count of enemy" +temp.Count);
+        //Debug.Log("the count of enemy" +temp.Count);
         
         foreach (GameObject item in temp)
         {

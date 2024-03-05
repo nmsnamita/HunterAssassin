@@ -2,9 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
+
 
 
 
@@ -13,6 +15,9 @@ public class SplashScreen : MonoBehaviour
     [SerializeField] CanvasGroup canvasGroup;
     [SerializeField] float timeToFade;
     [SerializeField] float afterFadeDelay = 1f;
+    //[SerializeField] AddressableAssetGroup maingroup;
+    [SerializeField] AssetReference[] scenes; 
+    [SerializeField] Slider loading;
 
     public bool fadeIn = false;
     public bool fadeout = false;
@@ -21,9 +26,12 @@ public class SplashScreen : MonoBehaviour
     private void Start()
     {
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        //PrintGroupName();
+
         //PlayerPrefs.SetInt("lives",3);
         StartCoroutine(FadeInAndOut());
-        StartCoroutine(downloadassets());
+        StartCoroutine(DownloadDependencies());
+        //StartCoroutine(downloadassets());
     }
 
     private void Update()
@@ -61,38 +69,67 @@ public class SplashScreen : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
-    IEnumerator downloadassets()
-    {
-        AsyncOperationHandle downloadHandle = Addressables.DownloadDependenciesAsync("Hunterassassian");
-        yield return downloadHandle;
-        if (downloadHandle.Status == AsyncOperationStatus.Succeeded)
-        {
-            Debug.Log("Scenes downloaded successfully.");
-        }
-        else
-        {
-            Debug.LogError("Failed to download scenes: " + downloadHandle.Status);
-        }
+    // void downloadassets()
+    // {
+    //     int status;
+        
+    //     for (int i = 0; i < scenes.Length; i++)
+    //     {
+    //         AsyncOperationHandle handle = Addressables.DownloadDependenciesAsync(scenes[i]);
+    //         {
+    //             if(handle.Status == AsyncOperationStatus.Succeeded)
+    //             {
+    //                 Debug.Log("its all done");
 
-    }
-    void PrintGroupName()
-    {
-        // Get the Addressable asset settings
-        AddressableAssetSettings settings = AddressableAssetSettingsDefaultObject.Settings;
+    //             }
+    //             else
+    //             {
+    //                 Debug.LogError(handle.Status);
+    //             }
+    //             handle.Completed += doneafew;
+    //         }
+    //     }
+        
+        
 
-        if (settings != null && settings.groups.Count > 0)
+    // }
+    int count =0;
+    IEnumerator DownloadDependencies()
+    {
+        for (int i = 0; i < scenes.Length; i++)
         {
-            // Get the name of the first (and only) group
-            string groupName = settings.groups[0].Name;
+            AsyncOperationHandle handle = Addressables.DownloadDependenciesAsync(scenes[i]);
             
-            // Print the group name
-            Debug.Log("Addressable Group Name: " + groupName);
-        }
-        else
-        {
-            Debug.LogError("No Addressable groups found.");
+            // Wait for the download operation to complete
+            yield return handle;
+
+            if (handle.Status == AsyncOperationStatus.Succeeded)
+            {
+                //Debug.Log("Dependencies downloaded successfully for scene: " + scenes[i]);
+                count++;
+            }
+            else
+            {
+               // Debug.LogError("Failed to download dependencies for scene: " + scenes[i]);
+            }
+
+            // Register a callback for when the download operation completes
+            handle.Completed += doneafew;
+
         }
     }
+
+    void doneafew(AsyncOperationHandle obj)
+    {
+        if(obj.Status == AsyncOperationStatus.Succeeded)
+        {  
+            loading.value  = count;
+            //Debug.Log("Success" + count);
+            //Addressables.LoadSceneAsync(AddressableScene, UnityEngine.SceneManagement.LoadSceneMode.Single, true);
+        }
+    }
+    
+    
 
     public void FadeIn()
     {

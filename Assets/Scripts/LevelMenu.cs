@@ -15,7 +15,7 @@ public class LevelMenu : MonoBehaviour
         ButtonsToArray();
         int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
         Debug.Log("Levels reached"+ unlockedLevel);
-        for (int i = 0; i < 350; i++)
+        for (int i = 0; i < unlockedLevel; i++)
         {
             buttons[i].interactable = true;
            // Debug.Log("Success");

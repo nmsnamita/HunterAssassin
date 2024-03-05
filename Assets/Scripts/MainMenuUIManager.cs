@@ -34,7 +34,7 @@ public class MainMenuUIManager : MonoBehaviour
         displayingmaterials();
         changingplayerskin();
         //int temp = PlayerPrefs.GetInt("lives");
-        Debug.Log("lives remaining"+ PlayerPrefs.GetInt("lives"));
+        //Debug.Log("lives remaining"+ PlayerPrefs.GetInt("lives"));
         for (int i = 0; i < heartui.Length; i++)
         {
             int temp = PlayerPrefs.GetInt("lives",5);
@@ -73,7 +73,7 @@ public class MainMenuUIManager : MonoBehaviour
         //Debug.LogError("the player has" + list.Length+" materials attached to itself");
         for (int i = 0; i < list.Length; i++)
         {
-            Debug.Log(list[i].name);
+            //Debug.Log(list[i].name);
         }
     }
     public void changingplayerskin()
@@ -81,7 +81,7 @@ public class MainMenuUIManager : MonoBehaviour
         GameObject child = playerprefab.transform.GetChild(1).gameObject;
         Material[] list  = child.GetComponent<SkinnedMeshRenderer>().sharedMaterials;
         int temp = PlayerPrefs.GetInt("PlayerType");
-        Debug.Log("PlayerType"+temp);
+        //Debug.Log("PlayerType"+temp);
         list[1] = shopextras[temp];
         list[5] = shopextras[temp];
         list[8] = shopextras[temp];
@@ -97,9 +97,10 @@ public class MainMenuUIManager : MonoBehaviour
             DateTime startTime = DateTime.Parse(stored);
             DateTime endTime = System.DateTime.Now;
             System.TimeSpan timeDifference = endTime - startTime;
-            Debug.Log("TimeDifference is :"+ timeDifference.Minutes);
+            //Debug.Log("TimeDifference is :"+ timeDifference.Minutes);
             if(timeDifference.Minutes <30)
             {
+                timer_ui.SetActive(true);
                 StartCoroutine(starttimer(30-timeDifference.Minutes,0));
                 //start tiem timer with the value
             }

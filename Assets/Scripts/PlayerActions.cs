@@ -1,3 +1,4 @@
+//using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -38,6 +39,9 @@ public class PlayerActions : MonoBehaviour
             hasAttacked = false;
         }
     }
+    private void FixedUpdate() {
+        //gunshot();
+    }
 
     IEnumerator SpawnGems(Vector3 spawnLocation)
     {
@@ -75,6 +79,20 @@ public class PlayerActions : MonoBehaviour
         }
         
         
+    }
+    [SerializeField] LayerMask enemydetection;
+    void gunshot()
+    {
+        RaycastHit hit;
+        if(Physics.Raycast(transform.position,Vector3.forward,out hit))
+        {
+            if(hit.collider.tag == "Enemy")
+            {
+                Debug.Log("detection was"+ hit.collider.gameObject.name);
+            }
+           
+        }
+        Debug.DrawRay(transform.position,Vector3.forward*2,Color.red);
     }
 
     private void OnTriggerEnter(Collider other)
