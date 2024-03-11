@@ -9,10 +9,12 @@ using UnityEngine.UIElements;
 
 public class LevelManager : MonoBehaviour
 {
+    int nxtlvl;
     public void LoadNextLevel()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int levelnumber = ExtractNumber(SceneManager.GetActiveScene().name);
+        nxtlvl = levelnumber;
         //string temp = SceneManager.GetActiveScene().name;
         Debug.Log("the name of the scene is"+levelnumber);
         SceneLoader loader = GameObject.Find("SceneLoader").GetComponent<SceneLoader>();
@@ -24,9 +26,16 @@ public class LevelManager : MonoBehaviour
             GameObject.FindGameObjectWithTag("data").GetComponent<GameData>().leveldata();
             //GameData.leveldata();
         }
-        loader.LoadScene(levelnumber);
+        showad();
+        //loader.LoadScene(levelnumber);
         //SceneManager.LoadScene(currentSceneIndex + 1);
     }
+    public void gotonext()
+    {
+        SceneLoader loader = GameObject.Find("SceneLoader").GetComponent<SceneLoader>();
+        loader.LoadScene(nxtlvl);
+    }
+
 
     int ExtractNumber(string input)
     {
@@ -45,6 +54,11 @@ public class LevelManager : MonoBehaviour
 
         // If no digit is found, return a default value (you can modify this based on your requirement)
         return int.Parse(temp);
+    }
+    public void showad()
+    {
+        RewardedAdsButton adsobj = GameObject.FindGameObjectWithTag("Ads").GetComponent<RewardedAdsButton>();
+        adsobj.ShowAd();
     }
     
 
