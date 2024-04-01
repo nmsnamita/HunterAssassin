@@ -133,6 +133,7 @@ public class SplashScreen : MonoBehaviour
             loading.value = handle.GetDownloadStatus().Percent;
             float temp = handle.GetDownloadStatus().Percent*100;
             loading_txt.text = "Downloading: " + temp+"%";
+            Debug.Log("just for j=github push");
             if (handle.Status == AsyncOperationStatus.Succeeded)
             {
                 //Debug.Log("Dependencies downloaded successfully for scene: " + scenes[i]);
