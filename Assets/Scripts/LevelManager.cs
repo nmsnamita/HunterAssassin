@@ -5,11 +5,12 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 using System.Xml.Serialization;
-using UnityEngine.UIElements;
+//using UnityEngine.UIElements;
 
 public class LevelManager : MonoBehaviour
 {
     int nxtlvl;
+    
     public void LoadNextLevel()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -26,9 +27,42 @@ public class LevelManager : MonoBehaviour
             GameObject.FindGameObjectWithTag("data").GetComponent<GameData>().leveldata();
             //GameData.leveldata();
         }
-        showad();
+        try
+        {
+            showad();
+        }
+        catch (System.Exception e)
+        {
+            Debug.Log("this is the error"+e);
+            throw;
+        }
+        //BlackImage();
         //loader.LoadScene(levelnumber);
         //SceneManager.LoadScene(currentSceneIndex + 1);
+    }
+    void BlackImage()
+    {
+        // Get screen width and height
+        int screenWidth = Screen.width;
+        int screenHeight = Screen.height;
+
+        // Create a new black Texture2D with screen width and height
+        Texture2D blackTexture = new Texture2D(screenWidth, screenHeight);
+
+        // Fill the texture with black color
+        Color[] pixels = new Color[screenWidth * screenHeight];
+        for (int i = 0; i < pixels.Length; i++)
+        {
+            pixels[i] = Color.black;
+        }
+        blackTexture.SetPixels(pixels);
+        blackTexture.Apply();
+
+        // Create a new GameObject with a Renderer component to display the black image
+        GameObject blackImageGO = new GameObject("BlackImage");
+        SpriteRenderer spriteRenderer = blackImageGO.AddComponent<SpriteRenderer>();
+        spriteRenderer.sprite = Sprite.Create(blackTexture, new Rect(0, 0, screenWidth, screenHeight), new Vector2(0.5f, 0.5f));
+        blackImageGO.transform.position = new Vector3(screenWidth / 2f, screenHeight / 2f, 0f);
     }
     public void gotonext()
     {
@@ -91,6 +125,7 @@ public class LevelManager : MonoBehaviour
         string stored = timesaved .ToString();
         PlayerPrefs.SetString("savedtimer",stored);
     }
+    
 
     public void OpenMainMenu()
     {

@@ -58,6 +58,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadScene(int levelIndex)
     {
+        //SceneManager.LoadScene(levelIndex+2);
         startscene(demoscenes[levelIndex]);
         AddressableScene = demoscenes[levelIndex];
 

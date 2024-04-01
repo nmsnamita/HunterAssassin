@@ -59,6 +59,7 @@ public class PlayerWeapon : MonoBehaviour
             weapons_obj.SetActive(false);
             validated = false;
         }
+        
     }
 
     // Update is called once per frame

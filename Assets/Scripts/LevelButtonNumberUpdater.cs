@@ -8,6 +8,7 @@ public class LevelButtonNumberUpdater : MonoBehaviour
 {
     [SerializeField] SceneLoader sceneLoader;
     [SerializeField] GameObject loadingscreen;
+    [SerializeField] Button[] buttons;
 
     void Start()
     {
@@ -37,5 +38,11 @@ public class LevelButtonNumberUpdater : MonoBehaviour
         //Debug.LogError("Clicked button text: "+levelNumber);
         //loadingscreen.SetActive(true);
         sceneLoader.LoadScene(levelNumber);
+        // foreach (Button item in buttons)
+        // {
+        //     item.interactable = false;
+        // }
+        // RewardedAdsButton adsobj = GameObject.FindGameObjectWithTag("Ads").GetComponent<RewardedAdsButton>();
+        // adsobj.ShowAd();
     }
 }
