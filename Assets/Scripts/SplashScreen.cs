@@ -35,9 +35,10 @@ public class SplashScreen : MonoBehaviour
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         //PrintGroupName();
         //DownloadScenesInGroup(groupName);
+        StartCoroutine(FadeInAndOut());
 
         //PlayerPrefs.SetInt("lives",3);
-        StartCoroutine(DownloadDependencies());
+        //StartCoroutine(DownloadDependencies());
         scenecomplete.text = "false";
         //StartCoroutine(downloadassets());
     }

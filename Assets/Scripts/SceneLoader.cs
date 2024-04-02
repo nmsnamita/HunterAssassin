@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.AddressableAssets;
 using UnityEngine.UI;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using TMPro;
 
 public class SceneLoader : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class SceneLoader : MonoBehaviour
     private void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-        loadingScreen.SetActive(false);
+        //loadingScreen.SetActive(false);
     }
     private void startscene(AssetReference record)//this reference is also taken from the royal luck project
     {
@@ -34,8 +35,9 @@ public class SceneLoader : MonoBehaviour
         // spawn.transform.SetParent(ui.transform);
         //Debug.LogError("starting the loading scene");
         SceneHandle = Addressables.DownloadDependenciesAsync(record);
-        
-        loadingScreen.SetActive(true);
+        loadingScreen = GameObject.FindGameObjectWithTag("loading");
+        //loadingScreen.SetActive(true);
+        Debug.Log("Dothis");
         StartCoroutine(loadingpercentage());
         SceneHandle.Completed += OnSceneLoaded;
     }
@@ -78,6 +80,12 @@ public class SceneLoader : MonoBehaviour
     IEnumerator loadingpercentage()
     {
         loadingBar.value = SceneHandle.GetDownloadStatus().Percent;
+        float temp = SceneHandle.GetDownloadStatus().Percent *100;
+        string temp2 = temp.ToString("F2");
+        if (temp <100)
+        {
+            loadingBar.gameObject.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "DownLoading :"+temp2+"%";
+        }
         //Debug.Log("////////////////////////////"+ SceneHandle.GetDownloadStatus().Percent);
         yield return new WaitForSeconds(0.2f);
         StartCoroutine(loadingpercentage());

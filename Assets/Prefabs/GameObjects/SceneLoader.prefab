@@ -43,5 +43,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4c6eb9acbea7c54e8ffd6d4560e0c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingScreen: {fileID: 0}
+  loadingScreen: {fileID: 4884608307590502640, guid: 8e18f5f81463d0543aef55f33953923a, type: 3}
   loadingBar: {fileID: 0}
+  AddressableScene:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  LoadingSlider: {fileID: 0}
+  demoscenes: []

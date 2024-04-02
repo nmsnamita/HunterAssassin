@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mylevels:
   - levelName: Level 1
-    weapon: Shotgun
-    selected_weapon: 1
+    weapon: Knife
+    selected_weapon: 0
   - levelName: Level 2
     weapon: Knife
     selected_weapon: 0
