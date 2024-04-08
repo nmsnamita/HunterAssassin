@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Level 139
+  m_EditorClassIdentifier: 
+  m_GroupName: Level 139
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 510a9a8aee9b62342843a2236d799a08
+  m_SerializeEntries:
+  - m_GUID: 2ff41b9fc18ac35448441daffeecf6fd
+    m_Address: Assets/Scenes/Level 139.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c199dcad29528294d8c359eb91fd4cfa, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: b68231a36748dbd44a36f0beca9d023b, type: 2}

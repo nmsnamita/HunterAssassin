@@ -28,6 +28,9 @@ public class SceneLoader : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
         //loadingScreen.SetActive(false);
     }
+    private void OnDisable() {
+        SceneHandle.Completed -= OnSceneLoaded;
+    }
     private void startscene(AssetReference record)//this reference is also taken from the royal luck project
     {
         // GameObject spawn =Instantiate(loadingScreen);
