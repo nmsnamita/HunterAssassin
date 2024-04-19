@@ -35,7 +35,7 @@ public class SplashScreen : MonoBehaviour
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         //PrintGroupName();
         //DownloadScenesInGroup(groupName);
-        StartCoroutine(FadeInAndOut());
+        //StartCoroutine(FadeInAndOut());
 
         //PlayerPrefs.SetInt("lives",3);
         //StartCoroutine(DownloadDependencies());
@@ -69,7 +69,7 @@ public class SplashScreen : MonoBehaviour
         }
     }
 
-    IEnumerator FadeInAndOut()
+    public IEnumerator FadeInAndOut()
     {
         FadeOut();
         yield return new WaitForSeconds(afterFadeDelay);
