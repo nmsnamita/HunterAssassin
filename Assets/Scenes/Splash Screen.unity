@@ -3708,7 +3708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   remoteUrl: http://13.233.184.138/huntandroid/
-  localFilePath: Application.persistantData
+  localFilePath: Application.persistentDataPath/downloads
   splash: {fileID: 1226165196}
   slide: {fileID: 420233005}
   download_txt: {fileID: 1051872617}
