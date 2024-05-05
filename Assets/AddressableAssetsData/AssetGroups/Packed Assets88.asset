@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Packed Assets88
+  m_EditorClassIdentifier: 
+  m_GroupName: Packed Assets88
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 877b7c96ef6cd444c8ae0395e472014e
+  m_SerializeEntries:
+  - m_GUID: 095d9946002466544a7b5e8fb217f02e
+    m_Address: Assets/Scenes/Level 115.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c199dcad29528294d8c359eb91fd4cfa, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 5f3221b25e4aa44b9986860d40d326e2, type: 2}
+    - {fileID: 11400000, guid: f6dc7d46ab41d42a99d9aa008a8d116d, type: 2}

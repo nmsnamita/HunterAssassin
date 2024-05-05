@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Level19
+  m_EditorClassIdentifier: 
+  m_GroupName: Level19
+  m_Data:
+    m_SerializedData: []
+  m_GUID: fd8ef570b3c814c7f8bc7bae0df99ec0
+  m_SerializeEntries:
+  - m_GUID: b4b45c712120afb41bd7398e92bee707
+    m_Address: Assets/Scenes/Level 19.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c199dcad29528294d8c359eb91fd4cfa, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: daa9e10bcad3b4ea18a539851cab36c6, type: 2}
+    - {fileID: 11400000, guid: 20a37ea1ac9214becb5f32277a171b99, type: 2}
