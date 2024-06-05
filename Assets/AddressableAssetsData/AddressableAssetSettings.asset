@@ -32,7 +32,7 @@ MonoBehaviour:
   m_RemoteCatalogBuildPath:
     m_Id: 69ff3e772bf636047b3b67a1c726c228
   m_RemoteCatalogLoadPath:
-    m_Id: f134a3c52cd1a9046a93ee0fdb25225d
+    m_Id: 65ed344557c69fd419ae5f4db9cc14bf
   m_ContentStateBuildPath: 
   m_overridePlayerVersion: 
   m_GroupAssets:
@@ -56,7 +56,7 @@ MonoBehaviour:
       - m_Id: ff6d504886286334eb6923f6cefd4ac9
         m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
       - m_Id: 65ed344557c69fd419ae5f4db9cc14bf
-        m_Value: Application.persistentDataPath
+        m_Value: Application.persistentDataPath/Android
       - m_Id: 69ff3e772bf636047b3b67a1c726c228
         m_Value: ServerData/[BuildTarget]
       - m_Id: f134a3c52cd1a9046a93ee0fdb25225d

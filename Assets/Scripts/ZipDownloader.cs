@@ -2,11 +2,13 @@ using System;
 using System.IO;
 using System.Net;
 using UnityEngine;
+using System.IO.Compression;
 
 public class ZipDownloader : MonoBehaviour
 {
-    private string zipUrl = "https://example.com/yourfile.zip"; // URL of the zip file to download
-    private string zipFileName = "yourfile.zip"; // Name of the zip file
+    private string zipUrl = "http://13.201.128.65/huntandroid/Android.zip"; // URL of the zip file to download
+    [SerializeField] SplashScreen splash;
+    private string zipFileName = "Android.zip"; // Name of the zip file
     private string zipFilePath; // Full path of the downloaded zip file
 
     private void Start()
@@ -62,8 +64,9 @@ public class ZipDownloader : MonoBehaviour
         if (File.Exists(zipFilePath))
         {
             // Unzip the file to the persistent data path
-            ZipUtil.Unzip(zipFilePath, Application.persistentDataPath);
+            ZipFile.ExtractToDirectory(zipFilePath, Application.persistentDataPath);
             Debug.Log("Zip file unzipped successfully.");
+            StartCoroutine(splash.FadeInAndOut());
         }
         else
         {
