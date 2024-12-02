@@ -10,9 +10,12 @@ using System.Xml.Serialization;
 public class LevelManager : MonoBehaviour
 {
     int nxtlvl;
+
     
     public void LoadNextLevel()
     {
+        GameObject loadingScreen = GameObject.FindGameObjectWithTag("loading");
+        loadingScreen.SetActive(true);
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int levelnumber = ExtractNumber(SceneManager.GetActiveScene().name);
         nxtlvl = levelnumber;
